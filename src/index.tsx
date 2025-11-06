@@ -78,11 +78,11 @@ app.get('/', (c) => {
       {/* Hero Section */}
       <section class="relative bg-gradient-to-br from-blue-600 via-blue-500 to-teal-400 text-white py-20 px-4 animate-fade-in">
         <div class="max-w-6xl mx-auto text-center">
-          <h1 class="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 leading-snug md:leading-tight drop-shadow-lg">
+          <h1 class="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 leading-loose md:leading-relaxed drop-shadow-lg">
             부모님 요양,<br class="md:hidden" /> 상담부터 등급신청까지<br />
             이제 <span class="text-yellow-300">15년 경력 전문가</span>에게<br class="md:hidden" /> 맡기세요
           </h1>
-          <h3 class="text-lg md:text-2xl mb-8 leading-relaxed drop-shadow-md">
+          <h3 class="text-lg md:text-2xl mb-8 leading-loose md:leading-relaxed drop-shadow-md">
             <span class="md:hidden">등급신청부터 방문요양·목욕·복지용구까지,<br />A방문3천사가 처음부터 끝까지<br /><span class="font-bold text-yellow-300">무료로</span> 도와드립니다.</span>
             <span class="hidden md:inline">장기요양 등급신청부터 방문요양·목욕·복지용구까지,<br />A방문3천사가 처음부터 끝까지 <span class="font-bold text-yellow-300">무료로</span> 도와드립니다.</span>
           </h3>
@@ -105,11 +105,11 @@ app.get('/', (c) => {
               </div>
             </div>
             <div class="md:w-2/3">
-              <h2 class="text-2xl md:text-4xl font-bold text-gray-800 mb-6 leading-snug md:leading-tight text-center md:text-left">
+              <h2 class="text-2xl md:text-4xl font-bold text-gray-800 mb-6 leading-relaxed md:leading-relaxed text-center md:text-left">
                 <span class="md:hidden"><span class="text-yellow-500">10년 이상의 경력</span>을 가진 장기요양 행정전문가,<br /><span class="text-yellow-500">15년 경력 사회복지사</span>가 직접 운영하는 <span class="text-blue-600">A방문3천사</span>입니다</span>
-                <span class="hidden md:inline">10년 이상의 경력을 가진 장기요양 행정전문가,<br />15년 경력 사회복지사가 직접 운영하는<br /><span class="text-blue-600">A방문3천사</span>입니다</span>
+                <span class="hidden md:inline"><span class="text-yellow-500">10년 이상의 경력</span>을 가진 장기요양 행정전문가,<br /><span class="text-yellow-500">15년 경력 사회복지사</span>가 직접 운영하는<br /><span class="text-blue-600">A방문3천사</span>입니다</span>
               </h2>
-              <p class="text-base md:text-lg text-gray-700 leading-relaxed">
+              <p class="text-base md:text-lg text-gray-700 leading-loose">
                 저희는 단순히 요양보호사를 연결하는 센터가 아닙니다.<br />
                 보호자님이 어디서부터 시작해야 할지 막막할 때, 복잡한 서류와 절차에 지칠 때,<br />
                 <span class="font-bold text-blue-600">15년 경력 장기요양전문가이자 사회복지사</span>가 직접 상황을 분석하고 가장 유리한 해결책을 제시합니다.
@@ -127,7 +127,7 @@ app.get('/', (c) => {
           </h2>
           
           <div class="grid md:grid-cols-3 gap-6 md:gap-8 mb-12 md:mb-16">
-            <div class="bg-white rounded-xl p-6 md:p-8 shadow-md hover:shadow-xl transition-shadow">
+            <div class="card-animate bg-white rounded-xl p-6 md:p-8 shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
               <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-4 mx-auto">
                 <i class="fas fa-file-alt text-3xl text-blue-600"></i>
               </div>
@@ -137,7 +137,7 @@ app.get('/', (c) => {
               </p>
             </div>
             
-            <div class="bg-white rounded-xl p-6 md:p-8 shadow-md hover:shadow-xl transition-shadow">
+            <div class="card-animate bg-white rounded-xl p-6 md:p-8 shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
               <div class="w-16 h-16 bg-teal-100 rounded-full flex items-center justify-center mb-4 mx-auto">
                 <i class="fas fa-link text-3xl text-teal-600"></i>
               </div>
@@ -147,7 +147,7 @@ app.get('/', (c) => {
               </p>
             </div>
             
-            <div class="bg-white rounded-xl p-6 md:p-8 shadow-md hover:shadow-xl transition-shadow">
+            <div class="card-animate bg-white rounded-xl p-6 md:p-8 shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
               <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-4 mx-auto">
                 <i class="fas fa-heart text-3xl text-green-600"></i>
               </div>
@@ -163,7 +163,7 @@ app.get('/', (c) => {
           </h3>
           
           <div class="grid grid-cols-2 md:grid-cols-5 gap-4 md:gap-6">
-            <a href="/visit-care" class="bg-white rounded-xl p-4 md:p-6 shadow-md hover:shadow-xl transition-all transform hover:-translate-y-1 text-center">
+            <a href="/visit-care" class="card-animate bg-white rounded-xl p-4 md:p-6 shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 hover:scale-105 text-center">
               <i class="fas fa-home text-3xl md:text-4xl text-blue-600 mb-3 md:mb-4"></i>
               <h4 class="font-bold text-gray-800 mb-2 text-sm md:text-base">방문요양</h4>
               <span class="text-xs md:text-sm text-blue-600 font-medium">
@@ -171,7 +171,7 @@ app.get('/', (c) => {
               </span>
             </a>
             
-            <a href="/family-care" class="bg-white rounded-xl p-4 md:p-6 shadow-md hover:shadow-xl transition-all transform hover:-translate-y-1 text-center">
+            <a href="/family-care" class="card-animate bg-white rounded-xl p-4 md:p-6 shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 hover:scale-105 text-center">
               <i class="fas fa-users text-3xl md:text-4xl text-teal-600 mb-3 md:mb-4"></i>
               <h4 class="font-bold text-gray-800 mb-2 text-sm md:text-base">가족요양</h4>
               <span class="text-xs md:text-sm text-teal-600 font-medium">
@@ -179,7 +179,7 @@ app.get('/', (c) => {
               </span>
             </a>
             
-            <a href="/bath-service" class="bg-white rounded-xl p-4 md:p-6 shadow-md hover:shadow-xl transition-all transform hover:-translate-y-1 text-center">
+            <a href="/bath-service" class="card-animate bg-white rounded-xl p-4 md:p-6 shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 hover:scale-105 text-center">
               <i class="fas fa-shower text-3xl md:text-4xl text-cyan-600 mb-3 md:mb-4"></i>
               <h4 class="font-bold text-gray-800 mb-2 text-sm md:text-base">방문목욕</h4>
               <span class="text-xs md:text-sm text-cyan-600 font-medium">
@@ -187,7 +187,7 @@ app.get('/', (c) => {
               </span>
             </a>
             
-            <a href="/welfare-equipment" class="bg-white rounded-xl p-4 md:p-6 shadow-md hover:shadow-xl transition-all transform hover:-translate-y-1 text-center">
+            <a href="/welfare-equipment" class="card-animate bg-white rounded-xl p-4 md:p-6 shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 hover:scale-105 text-center">
               <i class="fas fa-bed text-3xl md:text-4xl text-purple-600 mb-3 md:mb-4"></i>
               <h4 class="font-bold text-gray-800 mb-2 text-sm md:text-base">복지용구</h4>
               <span class="text-xs md:text-sm text-purple-600 font-medium">
@@ -195,7 +195,7 @@ app.get('/', (c) => {
               </span>
             </a>
             
-            <a href="/grade-application" class="bg-white rounded-xl p-4 md:p-6 shadow-md hover:shadow-xl transition-all transform hover:-translate-y-1 text-center col-span-2 md:col-span-1">
+            <a href="/grade-application" class="card-animate bg-white rounded-xl p-4 md:p-6 shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 hover:scale-105 text-center col-span-2 md:col-span-1">
               <i class="fas fa-clipboard-check text-3xl md:text-4xl text-green-600 mb-3 md:mb-4"></i>
               <h4 class="font-bold text-gray-800 mb-2 text-sm md:text-base">장기요양<br />등급신청</h4>
               <span class="text-xs md:text-sm text-green-600 font-medium">
@@ -217,7 +217,7 @@ app.get('/', (c) => {
           </p>
           
           <div class="grid md:grid-cols-3 gap-8">
-            <div class="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-8 text-center shadow-md">
+            <div class="card-animate bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-8 text-center shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
               <div class="w-20 h-20 bg-blue-600 rounded-full flex items-center justify-center mb-4 mx-auto">
                 <span class="text-white font-bold text-3xl">A</span>
               </div>
@@ -225,7 +225,7 @@ app.get('/', (c) => {
               <p class="text-gray-600">공단이 인정한 최우수 A등급 기관입니다.</p>
             </div>
             
-            <div class="bg-gradient-to-br from-green-50 to-green-100 rounded-xl p-8 text-center shadow-md">
+            <div class="card-animate bg-gradient-to-br from-green-50 to-green-100 rounded-xl p-8 text-center shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
               <div class="w-20 h-20 bg-green-600 rounded-full flex items-center justify-center mb-4 mx-auto">
                 <i class="fas fa-check-circle text-white text-3xl"></i>
               </div>
@@ -233,7 +233,7 @@ app.get('/', (c) => {
               <p class="text-gray-600">급여 청구 오류가 없는 상위 1%의 투명한 기관입니다.</p>
             </div>
             
-            <div class="bg-gradient-to-br from-purple-50 to-purple-100 rounded-xl p-8 text-center shadow-md">
+            <div class="card-animate bg-gradient-to-br from-purple-50 to-purple-100 rounded-xl p-8 text-center shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
               <div class="w-20 h-20 bg-purple-600 rounded-full flex items-center justify-center mb-4 mx-auto">
                 <i class="fas fa-award text-white text-3xl"></i>
               </div>
@@ -447,6 +447,25 @@ app.get('/', (c) => {
               target.scrollIntoView({ behavior: 'smooth' });
             }
           });
+        });
+        
+        // Intersection Observer for scroll animations
+        const observerOptions = {
+          threshold: 0.1,
+          rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('is-visible');
+            }
+          });
+        }, observerOptions);
+        
+        // Observe all scroll-animate and card-animate elements
+        document.querySelectorAll('.scroll-animate, .card-animate').forEach(el => {
+          observer.observe(el);
         });
       ` }} />
     </>
