@@ -78,13 +78,13 @@ app.get('/', (c) => {
       {/* Hero Section */}
       <section class="relative bg-gradient-to-br from-blue-600 via-blue-500 to-teal-400 text-white py-20 px-4">
         <div class="max-w-6xl mx-auto text-center">
-          <h1 class="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+          <h1 class="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 leading-snug md:leading-tight">
             부모님 요양,<br class="md:hidden" /> 상담부터 등급신청까지<br />
             이제 <span class="text-yellow-300">15년 경력 전문가</span>에게<br class="md:hidden" /> 맡기세요
           </h1>
           <h3 class="text-lg md:text-2xl mb-8 opacity-95 leading-relaxed">
-            장기요양 등급신청부터<br class="md:hidden" /> 방문요양·목욕·복지용구까지,<br />
-            A방문3천사가<br class="md:hidden" /> 처음부터 끝까지 <span class="font-bold text-yellow-300">무료로</span> 도와드립니다.
+            장기요양 등급신청부터 방문요양·목욕·복지용구까지,<br />
+            A방문3천사가 처음부터 끝까지 <span class="font-bold text-yellow-300">무료로</span> 도와드립니다.
           </h3>
           <a href="#final-cta" class="inline-block bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold text-base md:text-lg px-6 md:px-8 py-3 md:py-4 rounded-full shadow-lg transition-all transform hover:scale-105">
             <i class="fas fa-phone-alt mr-2"></i>
@@ -105,16 +105,15 @@ app.get('/', (c) => {
               </div>
             </div>
             <div class="md:w-2/3">
-              <h2 class="text-2xl md:text-4xl font-bold text-gray-800 mb-6">
+              <h2 class="text-2xl md:text-4xl font-bold text-gray-800 mb-6 leading-snug md:leading-tight">
                 10년 이상의 경력을 가진<br class="md:hidden" /> 장기요양 행정전문가,<br />
                 15년 경력 사회복지사가<br class="md:hidden" /> 직접 운영하는<br class="md:hidden" /> <span class="text-blue-600">A방문3천사</span>입니다
               </h2>
               <p class="text-base md:text-lg text-gray-700 leading-relaxed">
-                저희는 단순히<br class="md:hidden" /> 요양보호사를 연결하는<br class="md:hidden" /> 센터가 아닙니다.<br />
-                보호자님이<br class="md:hidden" /> 어디서부터 시작해야 할지<br class="md:hidden" /> 막막할 때,<br />
-                복잡한 서류와 절차에<br class="md:hidden" /> 지칠 때,<br />
-                <span class="font-bold text-blue-600">15년 경력 장기요양전문가이자<br class="md:hidden" /> 사회복지사</span>가<br class="md:hidden" /> 직접 상황을 분석하고<br />
-                가장 유리한 해결책을<br class="md:hidden" /> 제시합니다.
+                저희는 단순히 요양보호사를 연결하는 센터가 아닙니다.<br />
+                보호자님이 어디서부터 시작해야 할지 막막할 때, 복잡한 서류와 절차에 지칠 때,<br />
+                <span class="font-bold text-blue-600">15년 경력 장기요양전문가이자 사회복지사</span>가 직접 상황을 분석하고<br />
+                가장 유리한 해결책을 제시합니다.
               </p>
             </div>
           </div>
@@ -124,7 +123,7 @@ app.get('/', (c) => {
       {/* Benefits & Services */}
       <section id="benefits" class="py-16 px-4 bg-gray-50">
         <div class="max-w-6xl mx-auto">
-          <h2 class="text-2xl md:text-4xl font-bold text-center text-gray-800 mb-12">
+          <h2 class="text-2xl md:text-4xl font-bold text-center text-gray-800 mb-12 leading-snug md:leading-tight">
             보호자의 3가지 핵심 고민,<br class="md:hidden" /> <span class="text-blue-600">A방문3천사</span>가<br class="md:hidden" /> 해결합니다
           </h2>
           
@@ -133,10 +132,9 @@ app.get('/', (c) => {
               <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-4 mx-auto">
                 <i class="fas fa-file-alt text-3xl text-blue-600"></i>
               </div>
-              <h4 class="text-lg md:text-xl font-bold text-center mb-4 text-gray-800">복잡한 등급신청<br />'완전 무료 대행'</h4>
+              <h4 class="text-lg md:text-xl font-bold text-center mb-4 text-gray-800 leading-snug">복잡한 등급신청<br />'완전 무료 대행'</h4>
               <p class="text-sm md:text-base text-gray-600 text-center">
-                서류 준비부터<br class="md:hidden" /> 방문조사 대응까지,<br />
-                혜택을 놓치지 않도록<br class="md:hidden" /> 전문가가 전 과정을<br class="md:hidden" /> 무료로 대행합니다.
+                서류 준비부터 방문조사 대응까지, 혜택을 놓치지 않도록 전문가가 전 과정을 무료로 대행합니다.
               </p>
             </div>
             
@@ -144,10 +142,9 @@ app.get('/', (c) => {
               <div class="w-16 h-16 bg-teal-100 rounded-full flex items-center justify-center mb-4 mx-auto">
                 <i class="fas fa-link text-3xl text-teal-600"></i>
               </div>
-              <h4 class="text-lg md:text-xl font-bold text-center mb-4 text-gray-800">모든 서비스<br />'원스톱 통합 연계 관리'</h4>
+              <h4 class="text-lg md:text-xl font-bold text-center mb-4 text-gray-800 leading-snug">모든 서비스<br />'원스톱 통합 연계 관리'</h4>
               <p class="text-sm md:text-base text-gray-600 text-center">
-                방문요양, 목욕,<br class="md:hidden" /> 간호, 복지용구까지.<br />
-                여기저기 알아볼 필요 없이<br class="md:hidden" /> A방문3천사 한곳에서<br class="md:hidden" /> 통합 운영 및<br class="md:hidden" /> 연계 관리를 받으세요.
+                방문요양, 목욕, 간호, 복지용구까지. 여기저기 알아볼 필요 없이 A방문3천사 한곳에서 통합 운영 및 연계 관리를 받으세요.
               </p>
             </div>
             
@@ -155,15 +152,14 @@ app.get('/', (c) => {
               <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-4 mx-auto">
                 <i class="fas fa-heart text-3xl text-green-600"></i>
               </div>
-              <h4 class="text-lg md:text-xl font-bold text-center mb-4 text-gray-800">상황 변화에도<br />'지속 케어 연계'</h4>
+              <h4 class="text-lg md:text-xl font-bold text-center mb-4 text-gray-800 leading-snug">상황 변화에도<br />'지속 케어 연계'</h4>
               <p class="text-sm md:text-base text-gray-600 text-center">
-                필요시<br class="md:hidden" /> 주간보호센터, 요양원,<br />
-                병원 왕진까지<br class="md:hidden" /> 자연스러운 연속 돌봄을<br class="md:hidden" /> 제공하여<br class="md:hidden" /> 보호자 부담을<br class="md:hidden" /> 덜어드립니다.
+                필요시 주간보호센터, 요양원, 병원 왕진까지 자연스러운 연속 돌봄을 제공하여 보호자 부담을 덜어드립니다.
               </p>
             </div>
           </div>
 
-          <h3 class="text-xl md:text-3xl font-bold text-center text-gray-800 mb-8">
+          <h3 class="text-xl md:text-3xl font-bold text-center text-gray-800 mb-8 leading-snug md:leading-tight">
             A방문3천사의<br class="md:hidden" /> <span class="text-blue-600">원스톱 케어 서비스</span>
           </h3>
           
@@ -214,7 +210,7 @@ app.get('/', (c) => {
       {/* Social Proof */}
       <section id="social-proof" class="py-16 px-4 bg-white">
         <div class="max-w-6xl mx-auto">
-          <h2 class="text-2xl md:text-4xl font-bold text-center text-gray-800 mb-4">
+          <h2 class="text-2xl md:text-4xl font-bold text-center text-gray-800 mb-4 leading-snug md:leading-tight">
             믿고 맡길 수 있는 이유,
           </h2>
           <p class="text-lg md:text-xl text-center text-gray-600 mb-12">
@@ -252,7 +248,7 @@ app.get('/', (c) => {
       {/* FAQ */}
       <section id="faq" class="py-16 px-4 bg-gray-50">
         <div class="max-w-4xl mx-auto">
-          <h2 class="text-2xl md:text-4xl font-bold text-center text-gray-800 mb-12">
+          <h2 class="text-2xl md:text-4xl font-bold text-center text-gray-800 mb-12 leading-snug md:leading-tight">
             보호자님들이<br class="md:hidden" /> <span class="text-blue-600">가장 많이 묻는 질문</span><br class="md:hidden" /> (FAQ)
           </h2>
           
@@ -303,12 +299,12 @@ app.get('/', (c) => {
       {/* Final CTA */}
       <section id="final-cta" class="py-16 md:py-20 px-4 bg-gradient-to-br from-blue-600 via-blue-500 to-teal-400 text-white">
         <div class="max-w-4xl mx-auto text-center">
-          <h2 class="text-2xl md:text-4xl font-bold mb-4">
+          <h2 class="text-2xl md:text-4xl font-bold mb-4 leading-snug md:leading-tight">
             신청이 늦어지면<br class="md:hidden" /> 혜택도 늦어집니다
           </h2>
           <h3 class="text-base md:text-2xl mb-8 opacity-95 leading-relaxed">
-            부모님의 돌봄,<br class="md:hidden" /> 더 이상 혼자 고민하지 마세요.<br />
-            지금 바로 <span class="font-bold text-yellow-300">15년 경력<br class="md:hidden" /> 사회복지사</span>에게<br class="md:hidden" /> 무료 상담을 신청하고<br />
+            부모님의 돌봄, 더 이상 혼자 고민하지 마세요.<br />
+            지금 바로 <span class="font-bold text-yellow-300">15년 경력 사회복지사</span>에게 무료 상담을 신청하고<br />
             명확한 해결책을 받으세요.
           </h3>
           
@@ -381,13 +377,10 @@ app.get('/', (c) => {
             <div class="text-center mb-6">
               <p class="text-sm md:text-base text-gray-300 mb-2 leading-relaxed">
                 <span class="font-bold text-yellow-400">10년 이상의<br class="md:hidden" /> 장기요양 행정 경력</span>과<br class="md:hidden" />
-                <span class="font-bold text-yellow-400"> 15년 경력의<br class="md:hidden" /> 장기요양전문가<br class="md:hidden" /> 사회복지사</span>가<br />
-                처음부터 끝까지<br class="md:hidden" /> 함께하는<br class="md:hidden" /> 전문 케어 센터
+                <span class="font-bold text-yellow-400"> 15년 경력의<br class="md:hidden" /> 장기요양전문가<br class="md:hidden" /> 사회복지사</span>가 처음부터 끝까지 함께하는 전문 케어 센터
               </p>
               <p class="text-gray-400 text-xs md:text-sm mt-4 leading-relaxed">
-                국민건강보험공단 A등급 평가기관<br class="md:hidden" /> | <br class="md:hidden" />
-                청구그린기관 (상위 1%)<br class="md:hidden" /> | <br class="md:hidden" />
-                멘토기관 지정
+                국민건강보험공단 A등급 평가기관 | 청구그린기관 (상위 1%) | 멘토기관 지정
               </p>
             </div>
             
