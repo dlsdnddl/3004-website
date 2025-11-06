@@ -105,15 +105,49 @@ app.get('/', (c) => {
               </div>
             </div>
             <div class="md:w-2/3">
-              <h2 class="text-2xl md:text-4xl font-bold text-gray-800 mb-6 leading-relaxed md:leading-relaxed text-center md:text-left">
+              <h2 class="text-2xl md:text-4xl font-bold text-gray-800 mb-8 leading-relaxed text-center md:text-left">
                 <span class="md:hidden"><span class="text-yellow-500">10년 이상의 경력</span>을 가진 장기요양 행정전문가,<br /><span class="text-yellow-500">15년 경력 사회복지사</span>가 직접 운영하는 <span class="text-blue-600">A방문3천사</span>입니다</span>
                 <span class="hidden md:inline"><span class="text-yellow-500">10년 이상의 경력</span>을 가진 장기요양 행정전문가,<br /><span class="text-yellow-500">15년 경력 사회복지사</span>가 직접 운영하는<br /><span class="text-blue-600">A방문3천사</span>입니다</span>
               </h2>
-              <p class="text-base md:text-lg text-gray-700 leading-loose">
-                저희는 단순히 요양보호사를 연결하는 센터가 아닙니다.<br />
-                보호자님이 어디서부터 시작해야 할지 막막할 때, 복잡한 서류와 절차에 지칠 때,<br />
-                <span class="font-bold text-blue-600">15년 경력 장기요양전문가이자 사회복지사</span>가 직접 상황을 분석하고 가장 유리한 해결책을 제시합니다.
-              </p>
+              
+              {/* Key Points with Icons */}
+              <div class="space-y-4 mb-6">
+                <div class="flex items-start gap-3">
+                  <div class="flex-shrink-0 w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center mt-1">
+                    <i class="fas fa-user-tie text-blue-600 text-sm"></i>
+                  </div>
+                  <p class="text-base md:text-lg text-gray-700 leading-relaxed">
+                    단순히 요양보호사를 연결하는 센터가 <span class="font-bold">아닙니다</span>
+                  </p>
+                </div>
+                
+                <div class="flex items-start gap-3">
+                  <div class="flex-shrink-0 w-8 h-8 bg-teal-100 rounded-full flex items-center justify-center mt-1">
+                    <i class="fas fa-lightbulb text-teal-600 text-sm"></i>
+                  </div>
+                  <p class="text-base md:text-lg text-gray-700 leading-relaxed">
+                    어디서부터 시작해야 할지 막막할 때, 복잡한 서류와 절차에 지칠 때
+                  </p>
+                </div>
+                
+                <div class="flex items-start gap-3">
+                  <div class="flex-shrink-0 w-8 h-8 bg-green-100 rounded-full flex items-center justify-center mt-1">
+                    <i class="fas fa-check-circle text-green-600 text-sm"></i>
+                  </div>
+                  <p class="text-base md:text-lg text-gray-700 leading-relaxed">
+                    <span class="font-bold text-blue-600">15년 경력 장기요양전문가이자 사회복지사</span>가 직접 상황을 분석하고 가장 유리한 해결책을 제시합니다
+                  </p>
+                </div>
+              </div>
+              
+              {/* Highlight Box */}
+              <div class="bg-gradient-to-r from-blue-50 to-teal-50 rounded-xl p-6 border-l-4 border-blue-500">
+                <p class="text-base md:text-lg font-medium text-gray-800 leading-relaxed">
+                  <i class="fas fa-quote-left text-blue-400 mr-2"></i>
+                  보호자님의 상황에 맞는 <span class="text-blue-600 font-bold">최적의 케어 플랜</span>을 함께 만들어갑니다
+                  <i class="fas fa-quote-right text-blue-400 ml-2"></i>
+                </p>
+              </div>
             </div>
           </div>
         </div>
