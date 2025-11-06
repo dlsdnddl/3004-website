@@ -105,9 +105,17 @@ app.get('/', (c) => {
               </div>
             </div>
             <div class="md:w-2/3">
-              <h2 class="text-2xl md:text-4xl font-bold text-gray-800 mb-8 leading-relaxed text-center md:text-left">
-                <span class="md:hidden"><span class="text-yellow-500">10년 이상의 경력</span>을 가진 장기요양 행정전문가,<br /><span class="text-yellow-500">15년 경력 사회복지사</span>가 직접 운영하는 <span class="text-blue-600">A방문3천사</span>입니다</span>
-                <span class="hidden md:inline"><span class="text-yellow-500">10년 이상의 경력</span>을 가진 장기요양 행정전문가,<br /><span class="text-yellow-500">15년 경력 사회복지사</span>가 직접 운영하는<br /><span class="text-blue-600">A방문3천사</span>입니다</span>
+              <h2 class="text-2xl md:text-4xl font-bold mb-8 leading-relaxed text-center md:text-left">
+                <span class="md:hidden">
+                  <span class="text-gray-700">10년 이상의 경력을 가진</span> <span class="text-blue-600">장기요양 행정전문가</span>,<br />
+                  <span class="text-gray-700">15년 경력</span> <span class="text-blue-600">사회복지사</span><span class="text-gray-700">가 직접 운영하는</span><br />
+                  <span class="text-blue-600 text-3xl md:text-5xl">A방문3천사</span><span class="text-gray-700">입니다</span>
+                </span>
+                <span class="hidden md:inline">
+                  <span class="text-gray-700">10년 이상의 경력을 가진</span> <span class="text-blue-600">장기요양 행정전문가</span>,<br />
+                  <span class="text-gray-700">15년 경력</span> <span class="text-blue-600">사회복지사</span><span class="text-gray-700">가 직접 운영하는</span><br />
+                  <span class="text-blue-600 text-3xl md:text-5xl">A방문3천사</span><span class="text-gray-700">입니다</span>
+                </span>
               </h2>
               
               {/* Key Points with Icons */}
