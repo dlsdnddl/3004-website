@@ -154,17 +154,20 @@ npx wrangler pages secret put API_KEY --project-name webapp
 - **배포**: Wrangler CLI
 
 ## 완료된 기능
+✅ **네비게이션 바** (로고, 메뉴, 서비스 드롭다운, 상담신청 버튼)
 ✅ Hero Section with CTA
-✅ Mini About with 전문가 소개
-✅ Benefits & Services 섹션
+✅ Mini About with 임직원 사진 (10년 이상 행정전문가, 15년 경력 사회복지사)
+✅ Benefits & Services 섹션 (바로가기 버튼 포함)
 ✅ Social Proof (A등급, 청구그린기관, 멘토기관)
 ✅ FAQ 아코디언
 ✅ Final CTA with 상담 신청 폼
 ✅ 5개 서비스 상세 페이지 (방문요양, 가족요양, 방문목욕, 복지용구, 등급신청)
 ✅ D1 데이터베이스 연동
-✅ 반응형 디자인 (모바일 최적화)
+✅ 반응형 디자인 (모바일 최적화, 햄버거 메뉴)
 ✅ 스무스 스크롤 및 애니메이션
 ✅ Git 버전 관리
+✅ **브랜드 로고** (Three Angel 로고 적용)
+✅ **개선된 Footer** (로고, 연락처, 전문성 강조, 2025 저작권)
 
 ## 향후 개선 사항
 - [ ] 상담 신청 관리자 페이지 (대시보드)
@@ -178,7 +181,16 @@ npx wrangler pages secret put API_KEY --project-name webapp
 - **플랫폼**: Cloudflare Pages (준비 완료)
 - **상태**: 로컬 개발 완료, 프로덕션 배포 대기
 - **기술 스택**: Hono + TypeScript + TailwindCSS + Cloudflare D1
-- **최종 업데이트**: 2024년
+- **최종 업데이트**: 2025년
+
+## 주요 업데이트 (v2.0)
+- ✨ 전체 네비게이션 시스템 추가 (상단 메뉴바)
+- 🎨 Three Angel 브랜드 로고 적용
+- 👥 A방문3천사 임직원 사진 추가
+- 📝 카피 개선 ("10년 이상의 경력을 가진 장기요양 행정전문가")
+- 🔗 서비스 카드에 "바로가기" 클릭 유도 문구 추가
+- 🏢 Footer 개선 (로고, 전문성 강조, 2025 저작권)
+- 📱 모바일 반응형 햄버거 메뉴
 
 ## 문의
 프로젝트 관련 문의사항은 GitHub Issues를 통해 남겨주세요.
