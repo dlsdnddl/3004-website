@@ -71,6 +71,21 @@ input:focus, textarea:focus, select:focus {
   }
 }
 
+/* 네비게이션 드롭다운 */
+nav .group:hover .group-hover\:opacity-100 {
+  opacity: 1;
+  visibility: visible;
+}
+
+nav .relative .absolute {
+  transition: opacity 0.2s ease, visibility 0.2s ease;
+}
+
+/* 로고 이미지 */
+nav img {
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+}
+
 /* 스크롤바 스타일링 (선택사항) */
 ::-webkit-scrollbar {
   width: 10px;

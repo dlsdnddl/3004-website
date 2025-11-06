@@ -15,6 +15,66 @@ app.use('/api/*', cors())
 app.get('/', (c) => {
   return c.render(
     <>
+      {/* Navigation Bar */}
+      <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4">
+          <div class="flex items-center justify-between h-20">
+            {/* Logo */}
+            <a href="/" class="flex items-center space-x-3">
+              <img src="/static/logo.png" alt="A방문3천사 로고" class="h-12 w-auto" />
+              <span class="text-2xl font-bold text-blue-600">A방문3천사</span>
+            </a>
+            
+            {/* Desktop Menu */}
+            <div class="hidden md:flex items-center space-x-8">
+              <a href="#about" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">센터소개</a>
+              
+              {/* Services Dropdown */}
+              <div class="relative group">
+                <button class="text-gray-700 hover:text-blue-600 font-medium transition-colors flex items-center">
+                  서비스
+                  <i class="fas fa-chevron-down ml-1 text-sm"></i>
+                </button>
+                <div class="absolute left-0 mt-2 w-48 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 py-2">
+                  <a href="/visit-care" class="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors">방문요양</a>
+                  <a href="/family-care" class="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors">가족요양</a>
+                  <a href="/bath-service" class="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors">방문목욕</a>
+                  <a href="/welfare-equipment" class="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors">복지용구</a>
+                  <a href="/grade-application" class="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors">등급신청</a>
+                </div>
+              </div>
+              
+              <a href="#benefits" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">핵심혜택</a>
+              <a href="#social-proof" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">인증현황</a>
+              <a href="#faq" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">자주묻는질문</a>
+              <a href="#final-cta" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-full font-bold transition-all transform hover:scale-105">상담신청</a>
+            </div>
+            
+            {/* Mobile Menu Button */}
+            <button id="mobile-menu-btn" class="md:hidden text-gray-700 hover:text-blue-600">
+              <i class="fas fa-bars text-2xl"></i>
+            </button>
+          </div>
+          
+          {/* Mobile Menu */}
+          <div id="mobile-menu" class="hidden md:hidden pb-4">
+            <a href="#about" class="block py-2 text-gray-700 hover:text-blue-600 font-medium">센터소개</a>
+            <div class="py-2">
+              <p class="text-gray-700 font-medium mb-2">서비스</p>
+              <a href="/visit-care" class="block py-1 pl-4 text-gray-600 hover:text-blue-600">방문요양</a>
+              <a href="/family-care" class="block py-1 pl-4 text-gray-600 hover:text-blue-600">가족요양</a>
+              <a href="/bath-service" class="block py-1 pl-4 text-gray-600 hover:text-blue-600">방문목욕</a>
+              <a href="/welfare-equipment" class="block py-1 pl-4 text-gray-600 hover:text-blue-600">복지용구</a>
+              <a href="/grade-application" class="block py-1 pl-4 text-gray-600 hover:text-blue-600">등급신청</a>
+            </div>
+            <a href="#benefits" class="block py-2 text-gray-700 hover:text-blue-600 font-medium">핵심혜택</a>
+            <a href="#social-proof" class="block py-2 text-gray-700 hover:text-blue-600 font-medium">인증현황</a>
+            <a href="#faq" class="block py-2 text-gray-700 hover:text-blue-600 font-medium">자주묻는질문</a>
+            <a href="#final-cta" class="block py-2 text-blue-600 font-bold">상담신청</a>
+          </div>
+        </div>
+      </nav>
+
       {/* Hero Section */}
       <section class="relative bg-gradient-to-br from-blue-600 via-blue-500 to-teal-400 text-white py-20 px-4">
         <div class="max-w-6xl mx-auto text-center">
@@ -34,21 +94,19 @@ app.get('/', (c) => {
       </section>
 
       {/* Mini About */}
-      <section class="py-16 px-4 bg-white">
+      <section id="about" class="py-16 px-4 bg-white">
         <div class="max-w-6xl mx-auto">
           <div class="flex flex-col md:flex-row items-center gap-12">
             <div class="md:w-1/3">
-              <div class="bg-gradient-to-br from-blue-100 to-teal-100 rounded-2xl p-8 text-center shadow-md">
-                <div class="w-32 h-32 mx-auto mb-4 bg-white rounded-full flex items-center justify-center shadow-lg">
-                  <i class="fas fa-user-md text-6xl text-blue-600"></i>
-                </div>
-                <h3 class="text-2xl font-bold text-gray-800 mb-2">정형민 대표</h3>
-                <p class="text-gray-600">15년 경력 사회복지사<br />장기요양 전문가</p>
+              <div class="bg-gradient-to-br from-blue-100 to-teal-100 rounded-2xl p-8 text-center shadow-md overflow-hidden">
+                <img src="/static/team.jpg" alt="A방문3천사 임직원" class="w-full h-48 object-cover rounded-xl mb-4" />
+                <h3 class="text-2xl font-bold text-gray-800 mb-2">A방문3천사 임직원</h3>
+                <p class="text-gray-600">전문가 팀이 함께합니다</p>
               </div>
             </div>
             <div class="md:w-2/3">
               <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
-                10년 경력 행정전문가, 15년 경력 사회복지사가<br />
+                10년 이상의 경력을 가진 장기요양 행정전문가, 15년 경력 사회복지사가<br />
                 직접 운영하는 <span class="text-blue-600">A방문3천사</span>입니다
               </h2>
               <p class="text-lg text-gray-700 leading-relaxed">
@@ -63,7 +121,7 @@ app.get('/', (c) => {
       </section>
 
       {/* Benefits & Services */}
-      <section class="py-16 px-4 bg-gray-50">
+      <section id="benefits" class="py-16 px-4 bg-gray-50">
         <div class="max-w-6xl mx-auto">
           <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">
             보호자의 3가지 핵심 고민, <span class="text-blue-600">A방문3천사</span>가 해결합니다
@@ -106,36 +164,51 @@ app.get('/', (c) => {
           </h3>
           
           <div class="grid md:grid-cols-5 gap-6">
-            <a href="/visit-care" class="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all transform hover:-translate-y-1 text-center">
+            <a href="/visit-care" class="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all transform hover:-translate-y-1 text-center group">
               <i class="fas fa-home text-4xl text-blue-600 mb-4"></i>
-              <h4 class="font-bold text-gray-800">방문요양</h4>
+              <h4 class="font-bold text-gray-800 mb-2">방문요양</h4>
+              <span class="text-sm text-blue-600 font-medium opacity-0 group-hover:opacity-100 transition-opacity">
+                <i class="fas fa-arrow-right mr-1"></i>바로가기
+              </span>
             </a>
             
-            <a href="/family-care" class="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all transform hover:-translate-y-1 text-center">
+            <a href="/family-care" class="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all transform hover:-translate-y-1 text-center group">
               <i class="fas fa-users text-4xl text-teal-600 mb-4"></i>
-              <h4 class="font-bold text-gray-800">가족요양</h4>
+              <h4 class="font-bold text-gray-800 mb-2">가족요양</h4>
+              <span class="text-sm text-teal-600 font-medium opacity-0 group-hover:opacity-100 transition-opacity">
+                <i class="fas fa-arrow-right mr-1"></i>바로가기
+              </span>
             </a>
             
-            <a href="/bath-service" class="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all transform hover:-translate-y-1 text-center">
+            <a href="/bath-service" class="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all transform hover:-translate-y-1 text-center group">
               <i class="fas fa-shower text-4xl text-cyan-600 mb-4"></i>
-              <h4 class="font-bold text-gray-800">방문목욕</h4>
+              <h4 class="font-bold text-gray-800 mb-2">방문목욕</h4>
+              <span class="text-sm text-cyan-600 font-medium opacity-0 group-hover:opacity-100 transition-opacity">
+                <i class="fas fa-arrow-right mr-1"></i>바로가기
+              </span>
             </a>
             
-            <a href="/welfare-equipment" class="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all transform hover:-translate-y-1 text-center">
+            <a href="/welfare-equipment" class="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all transform hover:-translate-y-1 text-center group">
               <i class="fas fa-bed text-4xl text-purple-600 mb-4"></i>
-              <h4 class="font-bold text-gray-800">복지용구</h4>
+              <h4 class="font-bold text-gray-800 mb-2">복지용구</h4>
+              <span class="text-sm text-purple-600 font-medium opacity-0 group-hover:opacity-100 transition-opacity">
+                <i class="fas fa-arrow-right mr-1"></i>바로가기
+              </span>
             </a>
             
-            <a href="/grade-application" class="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all transform hover:-translate-y-1 text-center">
+            <a href="/grade-application" class="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all transform hover:-translate-y-1 text-center group">
               <i class="fas fa-clipboard-check text-4xl text-green-600 mb-4"></i>
-              <h4 class="font-bold text-gray-800">장기요양<br />등급신청</h4>
+              <h4 class="font-bold text-gray-800 mb-2">장기요양<br />등급신청</h4>
+              <span class="text-sm text-green-600 font-medium opacity-0 group-hover:opacity-100 transition-opacity">
+                <i class="fas fa-arrow-right mr-1"></i>바로가기
+              </span>
             </a>
           </div>
         </div>
       </section>
 
       {/* Social Proof */}
-      <section class="py-16 px-4 bg-white">
+      <section id="social-proof" class="py-16 px-4 bg-white">
         <div class="max-w-6xl mx-auto">
           <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-4">
             믿고 맡길 수 있는 이유,
@@ -173,7 +246,7 @@ app.get('/', (c) => {
       </section>
 
       {/* FAQ */}
-      <section class="py-16 px-4 bg-gray-50">
+      <section id="faq" class="py-16 px-4 bg-gray-50">
         <div class="max-w-4xl mx-auto">
           <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">
             보호자님들이 <span class="text-blue-600">가장 많이 묻는 질문</span> (FAQ)
@@ -277,18 +350,55 @@ app.get('/', (c) => {
       </section>
 
       {/* Footer */}
-      <footer class="bg-gray-800 text-white py-8 px-4">
-        <div class="max-w-6xl mx-auto text-center">
-          <h3 class="text-2xl font-bold mb-4">A방문3천사</h3>
-          <p class="text-gray-300 mb-4">
-            15년 경력 사회복지사가 직접 운영하는 장기요양 전문센터<br />
-            국민건강보험공단 A등급 평가기관 | 청구그린기관 | 멘토기관
-          </p>
-          <p class="text-gray-400 text-sm">
-            © 2024 A방문3천사. All rights reserved.
-          </p>
+      <footer class="bg-gray-800 text-white py-12 px-4">
+        <div class="max-w-6xl mx-auto">
+          <div class="flex flex-col md:flex-row items-center justify-between mb-8">
+            <div class="flex items-center space-x-3 mb-6 md:mb-0">
+              <img src="/static/logo.png" alt="A방문3천사 로고" class="h-16 w-auto" />
+              <div>
+                <h3 class="text-2xl font-bold">A방문3천사</h3>
+                <p class="text-sm text-gray-400">장기요양 전문센터</p>
+              </div>
+            </div>
+            
+            <div class="text-center md:text-right">
+              <p class="text-gray-300 mb-2">
+                <i class="fas fa-phone mr-2"></i>
+                문의전화: 000-0000-0000
+              </p>
+              <p class="text-gray-300">
+                <i class="fas fa-clock mr-2"></i>
+                운영시간: 평일 09:00 - 18:00
+              </p>
+            </div>
+          </div>
+          
+          <div class="border-t border-gray-700 pt-8">
+            <div class="text-center mb-6">
+              <p class="text-gray-300 mb-2 leading-relaxed">
+                <span class="font-bold text-yellow-400">10년 이상의 장기요양 행정 경력</span>과 
+                <span class="font-bold text-yellow-400"> 15년 경력의 장기요양전문가 사회복지사</span>가<br />
+                처음부터 끝까지 함께하는 전문 케어 센터
+              </p>
+              <p class="text-gray-400 text-sm mt-4">
+                국민건강보험공단 A등급 평가기관 | 청구그린기관 (상위 1%) | 멘토기관 지정
+              </p>
+            </div>
+            
+            <div class="text-center text-gray-400 text-sm border-t border-gray-700 pt-6">
+              <p>© 2025 A방문3천사. All rights reserved.</p>
+            </div>
+          </div>
         </div>
       </footer>
+
+      <script dangerouslySetInnerHTML={{ __html: `
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+          const menu = document.getElementById('mobile-menu');
+          menu.classList.toggle('hidden');
+        });
+      ` }} />
 
       <script dangerouslySetInnerHTML={{ __html: `
         document.getElementById('consultation-form').addEventListener('submit', async (e) => {
@@ -375,11 +485,17 @@ app.get('/visit-care', (c) => {
   return c.render(
     <>
       <nav class="bg-white shadow-md sticky top-0 z-50">
-        <div class="max-w-6xl mx-auto px-4 py-4">
-          <a href="/" class="text-2xl font-bold text-blue-600 hover:text-blue-700">
-            <i class="fas fa-arrow-left mr-2"></i>
-            A방문3천사
-          </a>
+        <div class="max-w-6xl mx-auto px-4">
+          <div class="flex items-center justify-between h-20">
+            <a href="/" class="flex items-center space-x-3">
+              <img src="/static/logo.png" alt="A방문3천사 로고" class="h-12 w-auto" />
+              <span class="text-2xl font-bold text-blue-600">A방문3천사</span>
+            </a>
+            <a href="/" class="text-gray-700 hover:text-blue-600 font-medium">
+              <i class="fas fa-home mr-2"></i>
+              홈으로
+            </a>
+          </div>
         </div>
       </nav>
 
@@ -465,7 +581,8 @@ app.get('/visit-care', (c) => {
 
       <footer class="bg-gray-800 text-white py-8 px-4">
         <div class="max-w-6xl mx-auto text-center">
-          <p class="text-gray-400">© 2024 A방문3천사. All rights reserved.</p>
+          <img src="/static/logo.png" alt="A방문3천사 로고" class="h-12 w-auto mx-auto mb-4 opacity-80" />
+          <p class="text-gray-400 text-sm">© 2025 A방문3천사. All rights reserved.</p>
         </div>
       </footer>
     </>,
@@ -478,11 +595,17 @@ app.get('/family-care', (c) => {
   return c.render(
     <>
       <nav class="bg-white shadow-md sticky top-0 z-50">
-        <div class="max-w-6xl mx-auto px-4 py-4">
-          <a href="/" class="text-2xl font-bold text-blue-600 hover:text-blue-700">
-            <i class="fas fa-arrow-left mr-2"></i>
-            A방문3천사
-          </a>
+        <div class="max-w-6xl mx-auto px-4">
+          <div class="flex items-center justify-between h-20">
+            <a href="/" class="flex items-center space-x-3">
+              <img src="/static/logo.png" alt="A방문3천사 로고" class="h-12 w-auto" />
+              <span class="text-2xl font-bold text-blue-600">A방문3천사</span>
+            </a>
+            <a href="/" class="text-gray-700 hover:text-blue-600 font-medium">
+              <i class="fas fa-home mr-2"></i>
+              홈으로
+            </a>
+          </div>
         </div>
       </nav>
 
@@ -574,7 +697,8 @@ app.get('/family-care', (c) => {
 
       <footer class="bg-gray-800 text-white py-8 px-4">
         <div class="max-w-6xl mx-auto text-center">
-          <p class="text-gray-400">© 2024 A방문3천사. All rights reserved.</p>
+          <img src="/static/logo.png" alt="A방문3천사 로고" class="h-12 w-auto mx-auto mb-4 opacity-80" />
+          <p class="text-gray-400 text-sm">© 2025 A방문3천사. All rights reserved.</p>
         </div>
       </footer>
     </>,
@@ -587,11 +711,17 @@ app.get('/bath-service', (c) => {
   return c.render(
     <>
       <nav class="bg-white shadow-md sticky top-0 z-50">
-        <div class="max-w-6xl mx-auto px-4 py-4">
-          <a href="/" class="text-2xl font-bold text-blue-600 hover:text-blue-700">
-            <i class="fas fa-arrow-left mr-2"></i>
-            A방문3천사
-          </a>
+        <div class="max-w-6xl mx-auto px-4">
+          <div class="flex items-center justify-between h-20">
+            <a href="/" class="flex items-center space-x-3">
+              <img src="/static/logo.png" alt="A방문3천사 로고" class="h-12 w-auto" />
+              <span class="text-2xl font-bold text-blue-600">A방문3천사</span>
+            </a>
+            <a href="/" class="text-gray-700 hover:text-blue-600 font-medium">
+              <i class="fas fa-home mr-2"></i>
+              홈으로
+            </a>
+          </div>
         </div>
       </nav>
 
@@ -653,7 +783,8 @@ app.get('/bath-service', (c) => {
 
       <footer class="bg-gray-800 text-white py-8 px-4">
         <div class="max-w-6xl mx-auto text-center">
-          <p class="text-gray-400">© 2024 A방문3천사. All rights reserved.</p>
+          <img src="/static/logo.png" alt="A방문3천사 로고" class="h-12 w-auto mx-auto mb-4 opacity-80" />
+          <p class="text-gray-400 text-sm">© 2025 A방문3천사. All rights reserved.</p>
         </div>
       </footer>
     </>,
@@ -666,11 +797,17 @@ app.get('/welfare-equipment', (c) => {
   return c.render(
     <>
       <nav class="bg-white shadow-md sticky top-0 z-50">
-        <div class="max-w-6xl mx-auto px-4 py-4">
-          <a href="/" class="text-2xl font-bold text-blue-600 hover:text-blue-700">
-            <i class="fas fa-arrow-left mr-2"></i>
-            A방문3천사
-          </a>
+        <div class="max-w-6xl mx-auto px-4">
+          <div class="flex items-center justify-between h-20">
+            <a href="/" class="flex items-center space-x-3">
+              <img src="/static/logo.png" alt="A방문3천사 로고" class="h-12 w-auto" />
+              <span class="text-2xl font-bold text-blue-600">A방문3천사</span>
+            </a>
+            <a href="/" class="text-gray-700 hover:text-blue-600 font-medium">
+              <i class="fas fa-home mr-2"></i>
+              홈으로
+            </a>
+          </div>
         </div>
       </nav>
 
@@ -746,7 +883,8 @@ app.get('/welfare-equipment', (c) => {
 
       <footer class="bg-gray-800 text-white py-8 px-4">
         <div class="max-w-6xl mx-auto text-center">
-          <p class="text-gray-400">© 2024 A방문3천사. All rights reserved.</p>
+          <img src="/static/logo.png" alt="A방문3천사 로고" class="h-12 w-auto mx-auto mb-4 opacity-80" />
+          <p class="text-gray-400 text-sm">© 2025 A방문3천사. All rights reserved.</p>
         </div>
       </footer>
     </>,
@@ -759,11 +897,17 @@ app.get('/grade-application', (c) => {
   return c.render(
     <>
       <nav class="bg-white shadow-md sticky top-0 z-50">
-        <div class="max-w-6xl mx-auto px-4 py-4">
-          <a href="/" class="text-2xl font-bold text-blue-600 hover:text-blue-700">
-            <i class="fas fa-arrow-left mr-2"></i>
-            A방문3천사
-          </a>
+        <div class="max-w-6xl mx-auto px-4">
+          <div class="flex items-center justify-between h-20">
+            <a href="/" class="flex items-center space-x-3">
+              <img src="/static/logo.png" alt="A방문3천사 로고" class="h-12 w-auto" />
+              <span class="text-2xl font-bold text-blue-600">A방문3천사</span>
+            </a>
+            <a href="/" class="text-gray-700 hover:text-blue-600 font-medium">
+              <i class="fas fa-home mr-2"></i>
+              홈으로
+            </a>
+          </div>
         </div>
       </nav>
 
@@ -885,7 +1029,8 @@ app.get('/grade-application', (c) => {
 
       <footer class="bg-gray-800 text-white py-8 px-4">
         <div class="max-w-6xl mx-auto text-center">
-          <p class="text-gray-400">© 2024 A방문3천사. All rights reserved.</p>
+          <img src="/static/logo.png" alt="A방문3천사 로고" class="h-12 w-auto mx-auto mb-4 opacity-80" />
+          <p class="text-gray-400 text-sm">© 2025 A방문3천사. All rights reserved.</p>
         </div>
       </footer>
     </>,
