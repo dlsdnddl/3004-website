@@ -20,7 +20,7 @@ app.get('/', (c) => {
         <div class="max-w-6xl mx-auto px-4">
           <div class="flex items-center justify-between h-20">
             {/* Logo */}
-            <a href="/" class="flex items-center space-x-3">
+            <a href="/" class="flex items-center space-x-2">
               <img src="/static/logo.png" alt="A방문3천사 로고" class="h-12 w-auto" />
               <span class="text-2xl font-bold text-blue-600">A방문3천사</span>
             </a>
@@ -76,15 +76,15 @@ app.get('/', (c) => {
       </nav>
 
       {/* Hero Section */}
-      <section class="relative bg-gradient-to-br from-blue-600 via-blue-500 to-teal-400 text-white py-20 px-4">
+      <section class="relative bg-gradient-to-br from-blue-600 via-blue-500 to-teal-400 text-white py-20 px-4 animate-fade-in">
         <div class="max-w-6xl mx-auto text-center">
-          <h1 class="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 leading-snug md:leading-tight">
+          <h1 class="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 leading-snug md:leading-tight drop-shadow-lg">
             부모님 요양,<br class="md:hidden" /> 상담부터 등급신청까지<br />
             이제 <span class="text-yellow-300">15년 경력 전문가</span>에게<br class="md:hidden" /> 맡기세요
           </h1>
-          <h3 class="text-lg md:text-2xl mb-8 opacity-95 leading-relaxed">
-            장기요양 등급신청부터 방문요양·목욕·복지용구까지,<br />
-            A방문3천사가 처음부터 끝까지 <span class="font-bold text-yellow-300">무료로</span> 도와드립니다.
+          <h3 class="text-lg md:text-2xl mb-8 leading-relaxed drop-shadow-md">
+            <span class="md:hidden">등급신청부터 방문요양·목욕·복지용구까지,<br />A방문3천사가 처음부터 끝까지<br /><span class="font-bold text-yellow-300">무료로</span> 도와드립니다.</span>
+            <span class="hidden md:inline">장기요양 등급신청부터 방문요양·목욕·복지용구까지,<br />A방문3천사가 처음부터 끝까지 <span class="font-bold text-yellow-300">무료로</span> 도와드립니다.</span>
           </h3>
           <a href="#final-cta" class="inline-block bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold text-base md:text-lg px-6 md:px-8 py-3 md:py-4 rounded-full shadow-lg transition-all transform hover:scale-105">
             <i class="fas fa-phone-alt mr-2"></i>
@@ -94,7 +94,7 @@ app.get('/', (c) => {
       </section>
 
       {/* Mini About */}
-      <section id="about" class="py-16 px-4 bg-white">
+      <section id="about" class="py-16 px-4 bg-white scroll-animate">
         <div class="max-w-6xl mx-auto">
           <div class="flex flex-col md:flex-row items-center gap-12">
             <div class="md:w-1/3">
@@ -105,15 +105,14 @@ app.get('/', (c) => {
               </div>
             </div>
             <div class="md:w-2/3">
-              <h2 class="text-2xl md:text-4xl font-bold text-gray-800 mb-6 leading-snug md:leading-tight">
-                10년 이상의 경력을 가진<br class="md:hidden" /> 장기요양 행정전문가,<br />
-                15년 경력 사회복지사가<br class="md:hidden" /> 직접 운영하는<br class="md:hidden" /> <span class="text-blue-600">A방문3천사</span>입니다
+              <h2 class="text-2xl md:text-4xl font-bold text-gray-800 mb-6 leading-snug md:leading-tight text-center md:text-left">
+                <span class="md:hidden"><span class="text-yellow-500">10년 이상의 경력</span>을 가진 장기요양 행정전문가,<br /><span class="text-yellow-500">15년 경력 사회복지사</span>가 직접 운영하는 <span class="text-blue-600">A방문3천사</span>입니다</span>
+                <span class="hidden md:inline">10년 이상의 경력을 가진 장기요양 행정전문가,<br />15년 경력 사회복지사가 직접 운영하는<br /><span class="text-blue-600">A방문3천사</span>입니다</span>
               </h2>
               <p class="text-base md:text-lg text-gray-700 leading-relaxed">
                 저희는 단순히 요양보호사를 연결하는 센터가 아닙니다.<br />
                 보호자님이 어디서부터 시작해야 할지 막막할 때, 복잡한 서류와 절차에 지칠 때,<br />
-                <span class="font-bold text-blue-600">15년 경력 장기요양전문가이자 사회복지사</span>가 직접 상황을 분석하고<br />
-                가장 유리한 해결책을 제시합니다.
+                <span class="font-bold text-blue-600">15년 경력 장기요양전문가이자 사회복지사</span>가 직접 상황을 분석하고 가장 유리한 해결책을 제시합니다.
               </p>
             </div>
           </div>
@@ -121,7 +120,7 @@ app.get('/', (c) => {
       </section>
 
       {/* Benefits & Services */}
-      <section id="benefits" class="py-16 px-4 bg-gray-50">
+      <section id="benefits" class="py-16 px-4 bg-gray-50 scroll-animate">
         <div class="max-w-6xl mx-auto">
           <h2 class="text-2xl md:text-4xl font-bold text-center text-gray-800 mb-12 leading-snug md:leading-tight">
             보호자의 3가지 핵심 고민,<br class="md:hidden" /> <span class="text-blue-600">A방문3천사</span>가<br class="md:hidden" /> 해결합니다
@@ -208,7 +207,7 @@ app.get('/', (c) => {
       </section>
 
       {/* Social Proof */}
-      <section id="social-proof" class="py-16 px-4 bg-white">
+      <section id="social-proof" class="py-16 px-4 bg-white scroll-animate">
         <div class="max-w-6xl mx-auto">
           <h2 class="text-2xl md:text-4xl font-bold text-center text-gray-800 mb-4 leading-snug md:leading-tight">
             믿고 맡길 수 있는 이유,
@@ -246,7 +245,7 @@ app.get('/', (c) => {
       </section>
 
       {/* FAQ */}
-      <section id="faq" class="py-16 px-4 bg-gray-50">
+      <section id="faq" class="py-16 px-4 bg-gray-50 scroll-animate">
         <div class="max-w-4xl mx-auto">
           <h2 class="text-2xl md:text-4xl font-bold text-center text-gray-800 mb-12 leading-snug md:leading-tight">
             보호자님들이<br class="md:hidden" /> <span class="text-blue-600">가장 많이 묻는 질문</span><br class="md:hidden" /> (FAQ)
@@ -297,7 +296,7 @@ app.get('/', (c) => {
       </section>
 
       {/* Final CTA */}
-      <section id="final-cta" class="py-16 md:py-20 px-4 bg-gradient-to-br from-blue-600 via-blue-500 to-teal-400 text-white">
+      <section id="final-cta" class="py-16 md:py-20 px-4 bg-gradient-to-br from-blue-600 via-blue-500 to-teal-400 text-white scroll-animate">
         <div class="max-w-4xl mx-auto text-center">
           <h2 class="text-2xl md:text-4xl font-bold mb-4 leading-snug md:leading-tight">
             신청이 늦어지면<br class="md:hidden" /> 혜택도 늦어집니다
@@ -353,7 +352,7 @@ app.get('/', (c) => {
       <footer class="bg-gray-800 text-white py-12 px-4">
         <div class="max-w-6xl mx-auto">
           <div class="flex flex-col md:flex-row items-center justify-between mb-8">
-            <div class="flex items-center space-x-3 mb-6 md:mb-0">
+            <div class="flex items-center space-x-2 mb-6 md:mb-0">
               <img src="/static/logo.png" alt="A방문3천사 로고" class="h-16 w-auto" />
               <div>
                 <h3 class="text-2xl font-bold">A방문3천사</h3>
@@ -486,7 +485,7 @@ app.get('/visit-care', (c) => {
       <nav class="bg-white shadow-md sticky top-0 z-50">
         <div class="max-w-6xl mx-auto px-4">
           <div class="flex items-center justify-between h-20">
-            <a href="/" class="flex items-center space-x-3">
+            <a href="/" class="flex items-center space-x-2">
               <img src="/static/logo.png" alt="A방문3천사 로고" class="h-12 w-auto" />
               <span class="text-2xl font-bold text-blue-600">A방문3천사</span>
             </a>
@@ -596,7 +595,7 @@ app.get('/family-care', (c) => {
       <nav class="bg-white shadow-md sticky top-0 z-50">
         <div class="max-w-6xl mx-auto px-4">
           <div class="flex items-center justify-between h-20">
-            <a href="/" class="flex items-center space-x-3">
+            <a href="/" class="flex items-center space-x-2">
               <img src="/static/logo.png" alt="A방문3천사 로고" class="h-12 w-auto" />
               <span class="text-2xl font-bold text-blue-600">A방문3천사</span>
             </a>
@@ -712,7 +711,7 @@ app.get('/bath-service', (c) => {
       <nav class="bg-white shadow-md sticky top-0 z-50">
         <div class="max-w-6xl mx-auto px-4">
           <div class="flex items-center justify-between h-20">
-            <a href="/" class="flex items-center space-x-3">
+            <a href="/" class="flex items-center space-x-2">
               <img src="/static/logo.png" alt="A방문3천사 로고" class="h-12 w-auto" />
               <span class="text-2xl font-bold text-blue-600">A방문3천사</span>
             </a>
@@ -798,7 +797,7 @@ app.get('/welfare-equipment', (c) => {
       <nav class="bg-white shadow-md sticky top-0 z-50">
         <div class="max-w-6xl mx-auto px-4">
           <div class="flex items-center justify-between h-20">
-            <a href="/" class="flex items-center space-x-3">
+            <a href="/" class="flex items-center space-x-2">
               <img src="/static/logo.png" alt="A방문3천사 로고" class="h-12 w-auto" />
               <span class="text-2xl font-bold text-blue-600">A방문3천사</span>
             </a>
@@ -898,7 +897,7 @@ app.get('/grade-application', (c) => {
       <nav class="bg-white shadow-md sticky top-0 z-50">
         <div class="max-w-6xl mx-auto px-4">
           <div class="flex items-center justify-between h-20">
-            <a href="/" class="flex items-center space-x-3">
+            <a href="/" class="flex items-center space-x-2">
               <img src="/static/logo.png" alt="A방문3천사 로고" class="h-12 w-auto" />
               <span class="text-2xl font-bold text-blue-600">A방문3천사</span>
             </a>
