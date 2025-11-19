@@ -107,7 +107,8 @@ app.get('/', (c) => {
             <div class="md:w-2/3">
               <h2 class="text-2xl md:text-4xl font-bold mb-8 leading-normal md:leading-relaxed text-center md:text-left">
                 <span class="md:hidden">
-                  <span class="text-gray-700">10년 이상의 경력을<br />가진</span> <span class="text-pink-600">장기요양<br />행정전문가</span>,<br />
+                  <span class="text-gray-700">10년 이상의 경력을 가진</span><br />
+                  <span class="text-pink-600">장기요양 행정전문가</span><span class="text-gray-700">,</span><br />
                   <span class="text-gray-700">15년 경력</span> <span class="text-pink-600">사회복지사</span><span class="text-gray-700">가</span><br />
                   <span class="text-gray-700">직접 운영하는</span> <span class="text-pink-600 text-3xl">A방문3천사</span><span class="text-gray-700">입니다</span>
                 </span>
@@ -345,8 +346,7 @@ app.get('/', (c) => {
           </h2>
           <h3 class="text-base md:text-2xl mb-8 opacity-95 leading-relaxed">
             부모님의 돌봄, 더 이상 혼자 고민하지 마세요.<br />
-            지금 바로 <span class="font-bold text-yellow-300">15년 경력 사회복지사</span>에게 무료 상담을 신청하고<br />
-            명확한 해결책을 받으세요.
+            지금 바로 <span class="font-bold text-yellow-300">15년 경력 사회복지사</span>에게 무료 상담을 <span class="inline md:inline">신청하고 명확한 해결책을 받으세요.</span>
           </h3>
           
           <div class="bg-white rounded-2xl p-8 shadow-2xl max-w-2xl mx-auto">
