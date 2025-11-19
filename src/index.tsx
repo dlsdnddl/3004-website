@@ -346,7 +346,7 @@ app.get('/', (c) => {
           </h2>
           <h3 class="text-base md:text-2xl mb-8 opacity-95 leading-relaxed">
             부모님의 돌봄, 더 이상 혼자 고민하지 마세요.<br />
-            지금 바로 <span class="font-bold text-yellow-300">15년 경력 사회복지사</span>에게 무료 상담을 <span class="inline md:inline">신청하고 명확한 해결책을 받으세요.</span>
+            지금 바로 <span class="font-bold text-yellow-300">15년 경력 사회복지사</span>에게 무료 상담 신청하고 명확한 해결책을 받으세요.
           </h3>
           
           <div class="bg-white rounded-2xl p-8 shadow-2xl max-w-2xl mx-auto">
