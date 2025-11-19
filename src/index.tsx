@@ -78,8 +78,8 @@ app.get('/', (c) => {
       {/* Hero Section */}
       <section class="relative bg-gradient-to-br from-pink-500 via-pink-400 to-pink-300 text-white py-20 px-4 animate-fade-in">
         <div class="max-w-6xl mx-auto text-center">
-          <h1 class="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 leading-snug md:leading-normal drop-shadow-lg">
-            부모님 요양, 상담부터<br class="md:hidden" /> 등급신청까지<br />
+          <h1 class="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 drop-shadow-lg" style="line-height: 1.4;">
+            부모님 요양, 상담부터<br class="md:hidden" /> 등급신청까지<br /><br class="md:hidden" />
             이제 <span class="text-yellow-200">15년 경력<br class="md:hidden" /> 전문가</span>에게 맡기세요
           </h1>
           <h3 class="text-lg md:text-2xl mb-8 leading-relaxed md:leading-relaxed drop-shadow-md">
@@ -107,8 +107,7 @@ app.get('/', (c) => {
             <div class="md:w-2/3">
               <h2 class="text-2xl md:text-4xl font-bold mb-8 leading-normal md:leading-relaxed text-center md:text-left">
                 <span class="md:hidden">
-                  <span class="text-gray-700">10년 이상의 경력을 가진</span><br />
-                  <span class="text-pink-600">장기요양 행정전문가</span>,<br />
+                  <span class="text-gray-700">10년 이상의 경력을<br />가진</span> <span class="text-pink-600">장기요양<br />행정전문가</span>,<br />
                   <span class="text-gray-700">15년 경력</span> <span class="text-pink-600">사회복지사</span><span class="text-gray-700">가</span><br />
                   <span class="text-gray-700">직접 운영하는</span> <span class="text-pink-600 text-3xl">A방문3천사</span><span class="text-gray-700">입니다</span>
                 </span>
@@ -272,7 +271,7 @@ app.get('/', (c) => {
               <div class="w-20 h-20 bg-pink-700 rounded-full flex items-center justify-center mb-4 mx-auto">
                 <i class="fas fa-check-circle text-white text-3xl"></i>
               </div>
-              <h4 class="text-xl font-bold mb-2 text-gray-800">청구그린기관<br />(상위 1%)</h4>
+              <h4 class="text-xl font-bold mb-2 text-gray-800">청구그린기관<br />(상위 1%, 2024년)</h4>
               <p class="text-gray-600">급여 청구 오류가 없는 상위 1%의 투명한 기관입니다.</p>
             </div>
             
@@ -418,11 +417,16 @@ app.get('/', (c) => {
           <div class="border-t border-gray-700 pt-8">
             <div class="text-center mb-6">
               <p class="text-sm md:text-base text-gray-300 mb-2 leading-relaxed">
-                <span class="font-bold text-yellow-400">10년 이상의<br class="md:hidden" /> 장기요양 행정 경력</span>과<br class="md:hidden" />
-                <span class="font-bold text-yellow-400"> 15년 경력의<br class="md:hidden" /> 장기요양전문가<br class="md:hidden" /> 사회복지사</span>가 처음부터 끝까지 함께하는 전문 케어 센터
+                <span class="md:hidden">
+                  <span class="font-bold text-yellow-400">10년 이상의 장기요양 행정 경력</span>과 <span class="font-bold text-yellow-400">15년 경력의 장기요양전문가 사회복지사</span>가 처음부터 끝까지 함께하는 전문 케어 센터
+                </span>
+                <span class="hidden md:inline">
+                  <span class="font-bold text-yellow-400">10년 이상의 장기요양 행정 경력</span>과<br />
+                  <span class="font-bold text-yellow-400"> 15년 경력의 장기요양전문가 사회복지사</span>가 처음부터 끝까지 함께하는 전문 케어 센터
+                </span>
               </p>
               <p class="text-gray-400 text-xs md:text-sm mt-4 leading-relaxed">
-                국민건강보험공단 A등급 평가기관 | 청구그린기관 (상위 1%) | 멘토기관 지정
+                국민건강보험공단 A등급 평가기관 | 청구그린기관 (상위 1%, 2024년) | 멘토기관 지정
               </p>
             </div>
             
