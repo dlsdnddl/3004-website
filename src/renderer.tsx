@@ -9,13 +9,16 @@ export const renderer = jsxRenderer(({ children, title }) => {
         <title>{title || 'A방문3천사 - 15년 경력 전문가의 장기요양 원스톱 케어'}</title>
         <meta name="description" content="부모님 요양, 상담부터 등급신청까지 15년 경력 전문가에게 맡기세요. 장기요양 등급신청부터 방문요양·목욕·복지용구까지 무료로 도와드립니다." />
         
-        {/* Google Fonts - Noto Sans KR for body text */}
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
-        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-        
-        {/* Pretendard font for headings - loaded via CDN */}
-        <link rel="stylesheet" as="style" crossorigin="" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+        {/* 여기어때 잘난체 웹폰트 */}
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff" />
+        <style dangerouslySetInnerHTML={{ __html: `
+          @font-face {
+            font-family: 'YeogiOttaeJalnan';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
+            font-weight: normal;
+            font-display: swap;
+          }
+        ` }} />
         
         <script src="https://cdn.tailwindcss.com"></script>
         <script dangerouslySetInnerHTML={{ __html: `
@@ -23,8 +26,22 @@ export const renderer = jsxRenderer(({ children, title }) => {
             theme: {
               extend: {
                 fontFamily: {
-                  sans: ['Noto Sans KR', 'sans-serif'],
-                  heading: ['Pretendard', 'Noto Sans KR', 'sans-serif']
+                  sans: ['YeogiOttaeJalnan', 'sans-serif'],
+                  heading: ['YeogiOttaeJalnan', 'sans-serif']
+                },
+                colors: {
+                  'pink': {
+                    50: '#fff5f9',
+                    100: '#ffe4f0',
+                    200: '#ffc9e1',
+                    300: '#ff9dc8',
+                    400: '#ff69ab',
+                    500: '#ff1493',
+                    600: '#e0127a',
+                    700: '#c01068',
+                    800: '#9e0f57',
+                    900: '#82104a',
+                  }
                 }
               }
             }

@@ -22,71 +22,71 @@ app.get('/', (c) => {
             {/* Logo */}
             <a href="/" class="flex items-center space-x-2">
               <img src="/static/logo.png" alt="A방문3천사 로고" class="h-12 w-auto" />
-              <span class="text-2xl font-bold text-blue-600">A방문3천사</span>
+              <span class="text-2xl font-bold text-pink-600">A방문3천사</span>
             </a>
             
             {/* Desktop Menu */}
             <div class="hidden md:flex items-center space-x-8">
-              <a href="#about" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">센터소개</a>
+              <a href="#about" class="text-gray-700 hover:text-pink-600 font-medium transition-colors">센터소개</a>
               
               {/* Services Dropdown */}
               <div class="relative group">
-                <button class="text-gray-700 hover:text-blue-600 font-medium transition-colors flex items-center">
+                <button class="text-gray-700 hover:text-pink-600 font-medium transition-colors flex items-center">
                   서비스
                   <i class="fas fa-chevron-down ml-1 text-sm"></i>
                 </button>
                 <div class="absolute left-0 mt-2 w-48 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 py-2">
-                  <a href="/visit-care" class="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors">방문요양</a>
-                  <a href="/family-care" class="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors">가족요양</a>
-                  <a href="/bath-service" class="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors">방문목욕</a>
-                  <a href="/welfare-equipment" class="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors">복지용구</a>
-                  <a href="/grade-application" class="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors">등급신청</a>
+                  <a href="/visit-care" class="block px-4 py-2 text-gray-700 hover:bg-pink-50 hover:text-pink-600 transition-colors">방문요양</a>
+                  <a href="/family-care" class="block px-4 py-2 text-gray-700 hover:bg-pink-50 hover:text-pink-600 transition-colors">가족요양</a>
+                  <a href="/bath-service" class="block px-4 py-2 text-gray-700 hover:bg-pink-50 hover:text-pink-600 transition-colors">방문목욕</a>
+                  <a href="/welfare-equipment" class="block px-4 py-2 text-gray-700 hover:bg-pink-50 hover:text-pink-600 transition-colors">복지용구</a>
+                  <a href="/grade-application" class="block px-4 py-2 text-gray-700 hover:bg-pink-50 hover:text-pink-600 transition-colors">등급신청</a>
                 </div>
               </div>
               
-              <a href="#benefits" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">핵심혜택</a>
-              <a href="#social-proof" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">인증현황</a>
-              <a href="#faq" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">자주묻는질문</a>
-              <a href="#final-cta" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-full font-bold transition-all transform hover:scale-105">상담신청</a>
+              <a href="#benefits" class="text-gray-700 hover:text-pink-600 font-medium transition-colors">핵심혜택</a>
+              <a href="#social-proof" class="text-gray-700 hover:text-pink-600 font-medium transition-colors">인증현황</a>
+              <a href="#faq" class="text-gray-700 hover:text-pink-600 font-medium transition-colors">자주묻는질문</a>
+              <a href="#final-cta" class="bg-pink-600 hover:bg-pink-700 text-white px-6 py-2 rounded-full font-bold transition-all transform hover:scale-105">상담신청</a>
             </div>
             
             {/* Mobile Menu Button */}
-            <button id="mobile-menu-btn" class="md:hidden text-gray-700 hover:text-blue-600">
+            <button id="mobile-menu-btn" class="md:hidden text-gray-700 hover:text-pink-600">
               <i class="fas fa-bars text-2xl"></i>
             </button>
           </div>
           
           {/* Mobile Menu */}
           <div id="mobile-menu" class="hidden md:hidden pb-4">
-            <a href="#about" class="block py-2 text-gray-700 hover:text-blue-600 font-medium">센터소개</a>
+            <a href="#about" class="block py-2 text-gray-700 hover:text-pink-600 font-medium">센터소개</a>
             <div class="py-2">
               <p class="text-gray-700 font-medium mb-2">서비스</p>
-              <a href="/visit-care" class="block py-1 pl-4 text-gray-600 hover:text-blue-600">방문요양</a>
-              <a href="/family-care" class="block py-1 pl-4 text-gray-600 hover:text-blue-600">가족요양</a>
-              <a href="/bath-service" class="block py-1 pl-4 text-gray-600 hover:text-blue-600">방문목욕</a>
-              <a href="/welfare-equipment" class="block py-1 pl-4 text-gray-600 hover:text-blue-600">복지용구</a>
-              <a href="/grade-application" class="block py-1 pl-4 text-gray-600 hover:text-blue-600">등급신청</a>
+              <a href="/visit-care" class="block py-1 pl-4 text-gray-600 hover:text-pink-600">방문요양</a>
+              <a href="/family-care" class="block py-1 pl-4 text-gray-600 hover:text-pink-600">가족요양</a>
+              <a href="/bath-service" class="block py-1 pl-4 text-gray-600 hover:text-pink-600">방문목욕</a>
+              <a href="/welfare-equipment" class="block py-1 pl-4 text-gray-600 hover:text-pink-600">복지용구</a>
+              <a href="/grade-application" class="block py-1 pl-4 text-gray-600 hover:text-pink-600">등급신청</a>
             </div>
-            <a href="#benefits" class="block py-2 text-gray-700 hover:text-blue-600 font-medium">핵심혜택</a>
-            <a href="#social-proof" class="block py-2 text-gray-700 hover:text-blue-600 font-medium">인증현황</a>
-            <a href="#faq" class="block py-2 text-gray-700 hover:text-blue-600 font-medium">자주묻는질문</a>
-            <a href="#final-cta" class="block py-2 text-blue-600 font-bold">상담신청</a>
+            <a href="#benefits" class="block py-2 text-gray-700 hover:text-pink-600 font-medium">핵심혜택</a>
+            <a href="#social-proof" class="block py-2 text-gray-700 hover:text-pink-600 font-medium">인증현황</a>
+            <a href="#faq" class="block py-2 text-gray-700 hover:text-pink-600 font-medium">자주묻는질문</a>
+            <a href="#final-cta" class="block py-2 text-pink-600 font-bold">상담신청</a>
           </div>
         </div>
       </nav>
 
       {/* Hero Section */}
-      <section class="relative bg-gradient-to-br from-blue-600 via-blue-500 to-teal-400 text-white py-20 px-4 animate-fade-in">
+      <section class="relative bg-gradient-to-br from-pink-500 via-pink-400 to-pink-300 text-white py-20 px-4 animate-fade-in">
         <div class="max-w-6xl mx-auto text-center">
-          <h1 class="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 leading-loose md:leading-relaxed drop-shadow-lg">
-            부모님 요양,<br class="md:hidden" /> 상담부터 등급신청까지<br />
-            이제 <span class="text-yellow-300">15년 경력 전문가</span>에게<br class="md:hidden" /> 맡기세요
+          <h1 class="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 leading-snug md:leading-normal drop-shadow-lg">
+            부모님 요양, 상담부터<br class="md:hidden" /> 등급신청까지<br />
+            이제 <span class="text-yellow-200">15년 경력<br class="md:hidden" /> 전문가</span>에게 맡기세요
           </h1>
-          <h3 class="text-lg md:text-2xl mb-8 leading-loose md:leading-relaxed drop-shadow-md">
-            <span class="md:hidden">등급신청부터 방문요양·목욕·복지용구까지,<br />A방문3천사가 처음부터 끝까지<br /><span class="font-bold text-yellow-300">무료로</span> 도와드립니다.</span>
-            <span class="hidden md:inline">장기요양 등급신청부터 방문요양·목욕·복지용구까지,<br />A방문3천사가 처음부터 끝까지 <span class="font-bold text-yellow-300">무료로</span> 도와드립니다.</span>
+          <h3 class="text-lg md:text-2xl mb-8 leading-relaxed md:leading-relaxed drop-shadow-md">
+            <span class="md:hidden">등급신청부터 방문요양·목욕·복지용구까지,<br />A방문3천사가 처음부터 끝까지<br /><span class="font-bold text-yellow-200">무료로</span> 도와드립니다.</span>
+            <span class="hidden md:inline">장기요양 등급신청부터 방문요양·목욕·복지용구까지,<br />A방문3천사가 처음부터 끝까지 <span class="font-bold text-yellow-200">무료로</span> 도와드립니다.</span>
           </h3>
-          <a href="#final-cta" class="inline-block bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold text-base md:text-lg px-6 md:px-8 py-3 md:py-4 rounded-full shadow-lg transition-all transform hover:scale-105">
+          <a href="#final-cta" class="inline-block bg-white hover:bg-pink-50 text-pink-600 font-bold text-base md:text-lg px-6 md:px-8 py-3 md:py-4 rounded-full shadow-lg transition-all transform hover:scale-105">
             <i class="fas fa-phone-alt mr-2"></i>
             지금 바로 무료 상담 신청하기
           </a>
@@ -98,31 +98,32 @@ app.get('/', (c) => {
         <div class="max-w-6xl mx-auto">
           <div class="flex flex-col md:flex-row items-center gap-12">
             <div class="md:w-1/3">
-              <div class="bg-gradient-to-br from-blue-100 to-teal-100 rounded-2xl p-8 text-center shadow-md overflow-hidden">
+              <div class="bg-gradient-to-br from-pink-100 to-pink-200 rounded-2xl p-8 text-center shadow-md overflow-hidden">
                 <img src="/static/team.jpg" alt="A방문3천사 임직원" class="w-full h-48 object-cover object-center rounded-xl mb-4" />
                 <h3 class="text-2xl font-bold text-gray-800 mb-2">A방문3천사 임직원</h3>
                 <p class="text-gray-600">전문가 팀이 함께합니다</p>
               </div>
             </div>
             <div class="md:w-2/3">
-              <h2 class="text-2xl md:text-4xl font-bold mb-8 leading-relaxed text-center md:text-left">
+              <h2 class="text-2xl md:text-4xl font-bold mb-8 leading-normal md:leading-relaxed text-center md:text-left">
                 <span class="md:hidden">
-                  <span class="text-gray-700">10년 이상의 경력을 가진</span> <span class="text-blue-600">장기요양 행정전문가</span>,<br />
-                  <span class="text-gray-700">15년 경력</span> <span class="text-blue-600">사회복지사</span><span class="text-gray-700">가 직접 운영하는</span><br />
-                  <span class="text-blue-600 text-3xl md:text-5xl">A방문3천사</span><span class="text-gray-700">입니다</span>
+                  <span class="text-gray-700">10년 이상의 경력을 가진</span><br />
+                  <span class="text-pink-600">장기요양 행정전문가</span>,<br />
+                  <span class="text-gray-700">15년 경력</span> <span class="text-pink-600">사회복지사</span><span class="text-gray-700">가</span><br />
+                  <span class="text-gray-700">직접 운영하는</span> <span class="text-pink-600 text-3xl">A방문3천사</span><span class="text-gray-700">입니다</span>
                 </span>
                 <span class="hidden md:inline">
-                  <span class="text-gray-700">10년 이상의 경력을 가진</span> <span class="text-blue-600">장기요양 행정전문가</span>,<br />
-                  <span class="text-gray-700">15년 경력</span> <span class="text-blue-600">사회복지사</span><span class="text-gray-700">가 직접 운영하는</span><br />
-                  <span class="text-blue-600 text-3xl md:text-5xl">A방문3천사</span><span class="text-gray-700">입니다</span>
+                  <span class="text-gray-700">10년 이상의 경력을 가진</span> <span class="text-pink-600">장기요양 행정전문가</span>,<br />
+                  <span class="text-gray-700">15년 경력</span> <span class="text-pink-600">사회복지사</span><span class="text-gray-700">가 직접 운영하는</span><br />
+                  <span class="text-pink-600 text-3xl md:text-5xl">A방문3천사</span><span class="text-gray-700">입니다</span>
                 </span>
               </h2>
               
               {/* Key Points with Icons */}
               <div class="space-y-4 mb-6">
                 <div class="flex items-start gap-3">
-                  <div class="flex-shrink-0 w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center mt-1">
-                    <i class="fas fa-user-tie text-blue-600 text-sm"></i>
+                  <div class="flex-shrink-0 w-8 h-8 bg-pink-100 rounded-full flex items-center justify-center mt-1">
+                    <i class="fas fa-user-tie text-pink-600 text-sm"></i>
                   </div>
                   <p class="text-base md:text-lg text-gray-700 leading-relaxed">
                     단순히 요양보호사를 연결하는 센터가 <span class="font-bold">아닙니다</span>
@@ -130,8 +131,8 @@ app.get('/', (c) => {
                 </div>
                 
                 <div class="flex items-start gap-3">
-                  <div class="flex-shrink-0 w-8 h-8 bg-teal-100 rounded-full flex items-center justify-center mt-1">
-                    <i class="fas fa-lightbulb text-teal-600 text-sm"></i>
+                  <div class="flex-shrink-0 w-8 h-8 bg-pink-200 rounded-full flex items-center justify-center mt-1">
+                    <i class="fas fa-lightbulb text-pink-700 text-sm"></i>
                   </div>
                   <p class="text-base md:text-lg text-gray-700 leading-relaxed">
                     어디서부터 시작해야 할지 막막할 때, 복잡한 서류와 절차에 지칠 때
@@ -139,21 +140,21 @@ app.get('/', (c) => {
                 </div>
                 
                 <div class="flex items-start gap-3">
-                  <div class="flex-shrink-0 w-8 h-8 bg-green-100 rounded-full flex items-center justify-center mt-1">
-                    <i class="fas fa-check-circle text-green-600 text-sm"></i>
+                  <div class="flex-shrink-0 w-8 h-8 bg-pink-300 rounded-full flex items-center justify-center mt-1">
+                    <i class="fas fa-check-circle text-pink-800 text-sm"></i>
                   </div>
                   <p class="text-base md:text-lg text-gray-700 leading-relaxed">
-                    <span class="font-bold text-blue-600">15년 경력 장기요양전문가이자 사회복지사</span>가 직접 상황을 분석하고 가장 유리한 해결책을 제시합니다
+                    <span class="font-bold text-pink-600">15년 경력 장기요양전문가이자 사회복지사</span>가 직접 상황을 분석하고 가장 유리한 해결책을 제시합니다
                   </p>
                 </div>
               </div>
               
               {/* Highlight Box */}
-              <div class="bg-gradient-to-r from-blue-50 to-teal-50 rounded-xl p-6 border-l-4 border-blue-500">
+              <div class="bg-gradient-to-r from-pink-50 to-pink-100 rounded-xl p-6 border-l-4 border-pink-500">
                 <p class="text-base md:text-lg font-medium text-gray-800 leading-relaxed">
-                  <i class="fas fa-quote-left text-blue-400 mr-2"></i>
-                  보호자님의 상황에 맞는 <span class="text-blue-600 font-bold">최적의 케어 플랜</span>을 함께 만들어갑니다
-                  <i class="fas fa-quote-right text-blue-400 ml-2"></i>
+                  <i class="fas fa-quote-left text-pink-400 mr-2"></i>
+                  보호자님의 상황에 맞는 <span class="text-pink-600 font-bold">최적의 케어 플랜</span>을 함께 만들어갑니다
+                  <i class="fas fa-quote-right text-pink-400 ml-2"></i>
                 </p>
               </div>
             </div>
@@ -165,13 +166,13 @@ app.get('/', (c) => {
       <section id="benefits" class="py-16 px-4 bg-gray-50 scroll-animate">
         <div class="max-w-6xl mx-auto">
           <h2 class="text-2xl md:text-4xl font-bold text-center text-gray-800 mb-12 leading-snug md:leading-tight">
-            보호자의 3가지 핵심 고민,<br class="md:hidden" /> <span class="text-blue-600">A방문3천사</span>가<br class="md:hidden" /> 해결합니다
+            보호자의 3가지 핵심 고민,<br class="md:hidden" /> <span class="text-pink-600">A방문3천사</span>가<br class="md:hidden" /> 해결합니다
           </h2>
           
           <div class="grid md:grid-cols-3 gap-6 md:gap-8 mb-12 md:mb-16">
             <div class="card-animate bg-white rounded-xl p-6 md:p-8 shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
-              <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-4 mx-auto">
-                <i class="fas fa-file-alt text-3xl text-blue-600"></i>
+              <div class="w-16 h-16 bg-pink-100 rounded-full flex items-center justify-center mb-4 mx-auto">
+                <i class="fas fa-file-alt text-3xl text-pink-600"></i>
               </div>
               <h4 class="text-lg md:text-xl font-bold text-center mb-4 text-gray-800 leading-snug">복잡한 등급신청<br />'완전 무료 대행'</h4>
               <p class="text-sm md:text-base text-gray-600 text-center">
@@ -180,8 +181,8 @@ app.get('/', (c) => {
             </div>
             
             <div class="card-animate bg-white rounded-xl p-6 md:p-8 shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
-              <div class="w-16 h-16 bg-teal-100 rounded-full flex items-center justify-center mb-4 mx-auto">
-                <i class="fas fa-link text-3xl text-teal-600"></i>
+              <div class="w-16 h-16 bg-pink-200 rounded-full flex items-center justify-center mb-4 mx-auto">
+                <i class="fas fa-link text-3xl text-pink-700"></i>
               </div>
               <h4 class="text-lg md:text-xl font-bold text-center mb-4 text-gray-800 leading-snug">모든 서비스<br />'원스톱 통합 연계 관리'</h4>
               <p class="text-sm md:text-base text-gray-600 text-center">
@@ -190,8 +191,8 @@ app.get('/', (c) => {
             </div>
             
             <div class="card-animate bg-white rounded-xl p-6 md:p-8 shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
-              <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-4 mx-auto">
-                <i class="fas fa-heart text-3xl text-green-600"></i>
+              <div class="w-16 h-16 bg-pink-300 rounded-full flex items-center justify-center mb-4 mx-auto">
+                <i class="fas fa-heart text-3xl text-pink-800"></i>
               </div>
               <h4 class="text-lg md:text-xl font-bold text-center mb-4 text-gray-800 leading-snug">상황 변화에도<br />'지속 케어 연계'</h4>
               <p class="text-sm md:text-base text-gray-600 text-center">
@@ -201,46 +202,46 @@ app.get('/', (c) => {
           </div>
 
           <h3 class="text-xl md:text-3xl font-bold text-center text-gray-800 mb-8 leading-snug md:leading-tight">
-            A방문3천사의<br class="md:hidden" /> <span class="text-blue-600">원스톱 케어 서비스</span>
+            A방문3천사의<br class="md:hidden" /> <span class="text-pink-600">원스톱 케어 서비스</span>
           </h3>
           
           <div class="grid grid-cols-2 md:grid-cols-5 gap-4 md:gap-6">
             <a href="/visit-care" class="card-animate bg-white rounded-xl p-4 md:p-6 shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 hover:scale-105 text-center">
-              <i class="fas fa-home text-3xl md:text-4xl text-blue-600 mb-3 md:mb-4"></i>
+              <i class="fas fa-home text-3xl md:text-4xl text-pink-600 mb-3 md:mb-4"></i>
               <h4 class="font-bold text-gray-800 mb-2 text-sm md:text-base">방문요양</h4>
-              <span class="text-xs md:text-sm text-blue-600 font-medium">
+              <span class="text-xs md:text-sm text-pink-600 font-medium">
                 <i class="fas fa-arrow-right mr-1"></i>바로가기
               </span>
             </a>
             
             <a href="/family-care" class="card-animate bg-white rounded-xl p-4 md:p-6 shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 hover:scale-105 text-center">
-              <i class="fas fa-users text-3xl md:text-4xl text-teal-600 mb-3 md:mb-4"></i>
+              <i class="fas fa-users text-3xl md:text-4xl text-pink-500 mb-3 md:mb-4"></i>
               <h4 class="font-bold text-gray-800 mb-2 text-sm md:text-base">가족요양</h4>
-              <span class="text-xs md:text-sm text-teal-600 font-medium">
+              <span class="text-xs md:text-sm text-pink-500 font-medium">
                 <i class="fas fa-arrow-right mr-1"></i>바로가기
               </span>
             </a>
             
             <a href="/bath-service" class="card-animate bg-white rounded-xl p-4 md:p-6 shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 hover:scale-105 text-center">
-              <i class="fas fa-shower text-3xl md:text-4xl text-cyan-600 mb-3 md:mb-4"></i>
+              <i class="fas fa-shower text-3xl md:text-4xl text-pink-400 mb-3 md:mb-4"></i>
               <h4 class="font-bold text-gray-800 mb-2 text-sm md:text-base">방문목욕</h4>
-              <span class="text-xs md:text-sm text-cyan-600 font-medium">
+              <span class="text-xs md:text-sm text-pink-400 font-medium">
                 <i class="fas fa-arrow-right mr-1"></i>바로가기
               </span>
             </a>
             
             <a href="/welfare-equipment" class="card-animate bg-white rounded-xl p-4 md:p-6 shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 hover:scale-105 text-center">
-              <i class="fas fa-bed text-3xl md:text-4xl text-purple-600 mb-3 md:mb-4"></i>
+              <i class="fas fa-bed text-3xl md:text-4xl text-purple-500 mb-3 md:mb-4"></i>
               <h4 class="font-bold text-gray-800 mb-2 text-sm md:text-base">복지용구</h4>
-              <span class="text-xs md:text-sm text-purple-600 font-medium">
+              <span class="text-xs md:text-sm text-purple-500 font-medium">
                 <i class="fas fa-arrow-right mr-1"></i>바로가기
               </span>
             </a>
             
             <a href="/grade-application" class="card-animate bg-white rounded-xl p-4 md:p-6 shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 hover:scale-105 text-center col-span-2 md:col-span-1">
-              <i class="fas fa-clipboard-check text-3xl md:text-4xl text-green-600 mb-3 md:mb-4"></i>
+              <i class="fas fa-clipboard-check text-3xl md:text-4xl text-pink-700 mb-3 md:mb-4"></i>
               <h4 class="font-bold text-gray-800 mb-2 text-sm md:text-base">장기요양<br />등급신청</h4>
-              <span class="text-xs md:text-sm text-green-600 font-medium">
+              <span class="text-xs md:text-sm text-pink-700 font-medium">
                 <i class="fas fa-arrow-right mr-1"></i>바로가기
               </span>
             </a>
@@ -255,27 +256,27 @@ app.get('/', (c) => {
             믿고 맡길 수 있는 이유,
           </h2>
           <p class="text-lg md:text-xl text-center text-gray-600 mb-12">
-            <span class="font-bold text-blue-600">공단이 이미 인정</span>했습니다
+            <span class="font-bold text-pink-600">공단이 이미 인정</span>했습니다
           </p>
           
           <div class="grid md:grid-cols-3 gap-8">
-            <div class="card-animate bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-8 text-center shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
-              <div class="w-20 h-20 bg-blue-600 rounded-full flex items-center justify-center mb-4 mx-auto">
+            <div class="card-animate bg-gradient-to-br from-pink-50 to-pink-100 rounded-xl p-8 text-center shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+              <div class="w-20 h-20 bg-pink-600 rounded-full flex items-center justify-center mb-4 mx-auto">
                 <span class="text-white font-bold text-3xl">A</span>
               </div>
               <h4 class="text-xl font-bold mb-2 text-gray-800">국민건강보험공단<br />A등급 평가기관</h4>
               <p class="text-gray-600">공단이 인정한 최우수 A등급 기관입니다.</p>
             </div>
             
-            <div class="card-animate bg-gradient-to-br from-green-50 to-green-100 rounded-xl p-8 text-center shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
-              <div class="w-20 h-20 bg-green-600 rounded-full flex items-center justify-center mb-4 mx-auto">
+            <div class="card-animate bg-gradient-to-br from-pink-100 to-pink-200 rounded-xl p-8 text-center shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+              <div class="w-20 h-20 bg-pink-700 rounded-full flex items-center justify-center mb-4 mx-auto">
                 <i class="fas fa-check-circle text-white text-3xl"></i>
               </div>
               <h4 class="text-xl font-bold mb-2 text-gray-800">청구그린기관<br />(상위 1%)</h4>
               <p class="text-gray-600">급여 청구 오류가 없는 상위 1%의 투명한 기관입니다.</p>
             </div>
             
-            <div class="card-animate bg-gradient-to-br from-purple-50 to-purple-100 rounded-xl p-8 text-center shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+            <div class="card-animate bg-gradient-to-br from-purple-100 to-pink-100 rounded-xl p-8 text-center shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
               <div class="w-20 h-20 bg-purple-600 rounded-full flex items-center justify-center mb-4 mx-auto">
                 <i class="fas fa-award text-white text-3xl"></i>
               </div>
@@ -290,7 +291,7 @@ app.get('/', (c) => {
       <section id="faq" class="py-16 px-4 bg-gray-50 scroll-animate">
         <div class="max-w-4xl mx-auto">
           <h2 class="text-2xl md:text-4xl font-bold text-center text-gray-800 mb-12 leading-snug md:leading-tight">
-            보호자님들이<br class="md:hidden" /> <span class="text-blue-600">가장 많이 묻는 질문</span><br class="md:hidden" /> (FAQ)
+            보호자님들이<br class="md:hidden" /> <span class="text-pink-600">가장 많이 묻는 질문</span><br class="md:hidden" /> (FAQ)
           </h2>
           
           <div class="space-y-4">
@@ -338,7 +339,7 @@ app.get('/', (c) => {
       </section>
 
       {/* Final CTA */}
-      <section id="final-cta" class="py-16 md:py-20 px-4 bg-gradient-to-br from-blue-600 via-blue-500 to-teal-400 text-white scroll-animate">
+      <section id="final-cta" class="py-16 md:py-20 px-4 bg-gradient-to-br from-pink-500 via-pink-400 to-pink-300 text-white scroll-animate">
         <div class="max-w-4xl mx-auto text-center">
           <h2 class="text-2xl md:text-4xl font-bold mb-4 leading-snug md:leading-tight">
             신청이 늦어지면<br class="md:hidden" /> 혜택도 늦어집니다
@@ -353,17 +354,17 @@ app.get('/', (c) => {
             <form id="consultation-form" class="space-y-4">
               <div class="text-left">
                 <label class="block text-gray-700 font-bold mb-2">이름 *</label>
-                <input type="text" name="name" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500 text-gray-900" placeholder="홍길동" />
+                <input type="text" name="name" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-pink-500 text-gray-900" placeholder="홍길동" />
               </div>
               
               <div class="text-left">
                 <label class="block text-gray-700 font-bold mb-2">연락처 *</label>
-                <input type="tel" name="phone" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500 text-gray-900" placeholder="010-1234-5678" />
+                <input type="tel" name="phone" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-pink-500 text-gray-900" placeholder="010-1234-5678" />
               </div>
               
               <div class="text-left">
                 <label class="block text-gray-700 font-bold mb-2">관심 서비스</label>
-                <select name="service_type" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500 text-gray-900">
+                <select name="service_type" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-pink-500 text-gray-900">
                   <option value="">선택해주세요</option>
                   <option value="등급신청">등급신청</option>
                   <option value="방문요양">방문요양</option>
@@ -376,10 +377,10 @@ app.get('/', (c) => {
               
               <div class="text-left">
                 <label class="block text-gray-700 font-bold mb-2">문의사항</label>
-                <textarea name="message" rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500 text-gray-900" placeholder="궁금하신 사항을 자유롭게 작성해주세요."></textarea>
+                <textarea name="message" rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-pink-500 text-gray-900" placeholder="궁금하신 사항을 자유롭게 작성해주세요."></textarea>
               </div>
               
-              <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold text-lg py-4 rounded-lg shadow-lg transition-all transform hover:scale-105">
+              <button type="submit" class="w-full bg-pink-600 hover:bg-pink-700 text-white font-bold text-lg py-4 rounded-lg shadow-lg transition-all transform hover:scale-105">
                 <i class="fas fa-phone-alt mr-2"></i>
                 15년 경력 전문가에게 무료 상담 신청하기
               </button>
@@ -548,9 +549,9 @@ app.get('/visit-care', (c) => {
           <div class="flex items-center justify-between h-20">
             <a href="/" class="flex items-center space-x-2">
               <img src="/static/logo.png" alt="A방문3천사 로고" class="h-12 w-auto" />
-              <span class="text-2xl font-bold text-blue-600">A방문3천사</span>
+              <span class="text-2xl font-bold text-pink-600">A방문3천사</span>
             </a>
-            <a href="/" class="text-gray-700 hover:text-blue-600 font-medium">
+            <a href="/" class="text-gray-700 hover:text-pink-600 font-medium">
               <i class="fas fa-home mr-2"></i>
               홈으로
             </a>
@@ -558,10 +559,10 @@ app.get('/visit-care', (c) => {
         </div>
       </nav>
 
-      <section class="py-16 px-4 bg-gradient-to-br from-blue-50 to-white">
+      <section class="py-16 px-4 bg-gradient-to-br from-pink-50 to-white">
         <div class="max-w-4xl mx-auto">
           <div class="text-center mb-12">
-            <i class="fas fa-home text-6xl text-blue-600 mb-4"></i>
+            <i class="fas fa-home text-6xl text-pink-600 mb-4"></i>
             <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-6">방문요양</h1>
             <p class="text-xl text-gray-600 leading-relaxed">
               "어르신이 집에서 편안하게 생활하실 수 있도록,<br />
@@ -577,19 +578,19 @@ app.get('/visit-care', (c) => {
 
             <h3 class="text-xl font-bold text-gray-800 mb-4">제공 내용</h3>
             <div class="grid md:grid-cols-2 gap-4 mb-8">
-              <div class="bg-blue-50 rounded-lg p-4">
-                <h4 class="font-bold text-blue-800 mb-2"><i class="fas fa-hands-helping mr-2"></i>신체활동 보조</h4>
+              <div class="bg-pink-50 rounded-lg p-4">
+                <h4 class="font-bold text-pink-800 mb-2"><i class="fas fa-hands-helping mr-2"></i>신체활동 보조</h4>
                 <p class="text-gray-700 text-sm">세면, 옷 갈아입히기, 보행 보조, 약 복용 확인</p>
               </div>
-              <div class="bg-teal-50 rounded-lg p-4">
-                <h4 class="font-bold text-teal-800 mb-2"><i class="fas fa-utensils mr-2"></i>식사·청결 관리</h4>
+              <div class="bg-pink-100 rounded-lg p-4">
+                <h4 class="font-bold text-pink-900 mb-2"><i class="fas fa-utensils mr-2"></i>식사·청결 관리</h4>
                 <p class="text-gray-700 text-sm">식사 준비, 가벼운 청소, 침구 정돈</p>
               </div>
-              <div class="bg-green-50 rounded-lg p-4">
-                <h4 class="font-bold text-green-800 mb-2"><i class="fas fa-smile mr-2"></i>정서활동 지원</h4>
+              <div class="bg-pink-200 rounded-lg p-4">
+                <h4 class="font-bold text-pink-900 mb-2"><i class="fas fa-smile mr-2"></i>정서활동 지원</h4>
                 <p class="text-gray-700 text-sm">말벗, 산책 동행, 인지 자극 놀이</p>
               </div>
-              <div class="bg-purple-50 rounded-lg p-4">
+              <div class="bg-purple-100 rounded-lg p-4">
                 <h4 class="font-bold text-purple-800 mb-2"><i class="fas fa-users mr-2"></i>가족지원</h4>
                 <p class="text-gray-700 text-sm">가족 돌봄 부담 완화 및 상담</p>
               </div>
@@ -598,39 +599,39 @@ app.get('/visit-care', (c) => {
             <h3 class="text-xl font-bold text-gray-800 mb-4">이용 절차</h3>
             <div class="space-y-3 mb-8">
               <div class="flex items-center gap-3">
-                <span class="bg-blue-600 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold flex-shrink-0">1</span>
+                <span class="bg-pink-600 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold flex-shrink-0">1</span>
                 <p class="text-gray-700">전화/온라인 상담</p>
               </div>
               <div class="flex items-center gap-3">
-                <span class="bg-blue-600 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold flex-shrink-0">2</span>
+                <span class="bg-pink-600 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold flex-shrink-0">2</span>
                 <p class="text-gray-700">어르신 건강·생활상황 분석</p>
               </div>
               <div class="flex items-center gap-3">
-                <span class="bg-blue-600 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold flex-shrink-0">3</span>
+                <span class="bg-pink-600 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold flex-shrink-0">3</span>
                 <p class="text-gray-700">요양보호사 매칭</p>
               </div>
               <div class="flex items-center gap-3">
-                <span class="bg-blue-600 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold flex-shrink-0">4</span>
+                <span class="bg-pink-600 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold flex-shrink-0">4</span>
                 <p class="text-gray-700">돌봄 서비스 시작</p>
               </div>
               <div class="flex items-center gap-3">
-                <span class="bg-blue-600 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold flex-shrink-0">5</span>
+                <span class="bg-pink-600 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold flex-shrink-0">5</span>
                 <p class="text-gray-700">정기 모니터링 및 보호자 소통</p>
               </div>
             </div>
 
-            <div class="bg-gradient-to-r from-blue-50 to-teal-50 rounded-lg p-6">
+            <div class="bg-gradient-to-r from-pink-50 to-pink-100 rounded-lg p-6">
               <h3 class="text-xl font-bold text-gray-800 mb-4">실제 혜택</h3>
               <ul class="space-y-2 text-gray-700">
-                <li><i class="fas fa-check-circle text-blue-600 mr-2"></i>보호자의 부담이 눈에 띄게 줄어듭니다</li>
-                <li><i class="fas fa-check-circle text-blue-600 mr-2"></i>어르신은 집에서 안정감·존엄성 유지</li>
-                <li><i class="fas fa-check-circle text-blue-600 mr-2"></i>전문가의 돌봄으로 사고 위험 감소</li>
+                <li><i class="fas fa-check-circle text-pink-600 mr-2"></i>보호자의 부담이 눈에 띄게 줄어듭니다</li>
+                <li><i class="fas fa-check-circle text-pink-600 mr-2"></i>어르신은 집에서 안정감·존엄성 유지</li>
+                <li><i class="fas fa-check-circle text-pink-600 mr-2"></i>전문가의 돌봄으로 사고 위험 감소</li>
               </ul>
             </div>
           </div>
 
           <div class="text-center">
-            <a href="/#final-cta" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold text-lg px-8 py-4 rounded-full shadow-lg transition-all transform hover:scale-105">
+            <a href="/#final-cta" class="inline-block bg-pink-600 hover:bg-pink-700 text-white font-bold text-lg px-8 py-4 rounded-full shadow-lg transition-all transform hover:scale-105">
               <i class="fas fa-phone-alt mr-2"></i>
               방문요양 상담 신청하기
             </a>
@@ -658,9 +659,9 @@ app.get('/family-care', (c) => {
           <div class="flex items-center justify-between h-20">
             <a href="/" class="flex items-center space-x-2">
               <img src="/static/logo.png" alt="A방문3천사 로고" class="h-12 w-auto" />
-              <span class="text-2xl font-bold text-blue-600">A방문3천사</span>
+              <span class="text-2xl font-bold text-pink-600">A방문3천사</span>
             </a>
-            <a href="/" class="text-gray-700 hover:text-blue-600 font-medium">
+            <a href="/" class="text-gray-700 hover:text-pink-600 font-medium">
               <i class="fas fa-home mr-2"></i>
               홈으로
             </a>
@@ -668,10 +669,10 @@ app.get('/family-care', (c) => {
         </div>
       </nav>
 
-      <section class="py-16 px-4 bg-gradient-to-br from-teal-50 to-white">
+      <section class="py-16 px-4 bg-gradient-to-br from-pink-50 to-white">
         <div class="max-w-4xl mx-auto">
           <div class="text-center mb-12">
-            <i class="fas fa-users text-6xl text-teal-600 mb-4"></i>
+            <i class="fas fa-users text-6xl text-pink-500 mb-4"></i>
             <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-6">가족요양</h1>
             <p class="text-xl text-gray-600 leading-relaxed">
               "가족이 직접 돌보는 정(情)은 그대로,<br />
@@ -689,9 +690,9 @@ app.get('/family-care', (c) => {
             <div class="overflow-x-auto mb-8">
               <table class="w-full border-collapse">
                 <thead>
-                  <tr class="bg-teal-600 text-white">
-                    <th class="border border-teal-700 px-4 py-3 text-left">항목</th>
-                    <th class="border border-teal-700 px-4 py-3 text-left">내용</th>
+                  <tr class="bg-pink-500 text-white">
+                    <th class="border border-pink-600 px-4 py-3 text-left">항목</th>
+                    <th class="border border-pink-600 px-4 py-3 text-left">내용</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -715,38 +716,38 @@ app.get('/family-care', (c) => {
               </table>
             </div>
 
-            <div class="bg-gradient-to-r from-teal-50 to-green-50 rounded-lg p-6 mb-8">
+            <div class="bg-gradient-to-r from-pink-50 to-pink-100 rounded-lg p-6 mb-8">
               <h3 class="text-xl font-bold text-gray-800 mb-4">이 서비스가 의미있는 이유</h3>
               <ul class="space-y-2 text-gray-700">
-                <li><i class="fas fa-check-circle text-teal-600 mr-2"></i>기존에 하고 있던 돌봄이 경제적으로 보상됩니다</li>
-                <li><i class="fas fa-check-circle text-teal-600 mr-2"></i>낯선 사람 방문 없이 심리적 안정감 유지</li>
-                <li><i class="fas fa-check-circle text-teal-600 mr-2"></i>보호자의 번아웃 예방</li>
+                <li><i class="fas fa-check-circle text-pink-600 mr-2"></i>기존에 하고 있던 돌봄이 경제적으로 보상됩니다</li>
+                <li><i class="fas fa-check-circle text-pink-600 mr-2"></i>낯선 사람 방문 없이 심리적 안정감 유지</li>
+                <li><i class="fas fa-check-circle text-pink-600 mr-2"></i>보호자의 번아웃 예방</li>
               </ul>
             </div>
 
             <h3 class="text-xl font-bold text-gray-800 mb-4">절차</h3>
             <div class="space-y-3">
               <div class="flex items-center gap-3">
-                <span class="bg-teal-600 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold flex-shrink-0">1</span>
+                <span class="bg-pink-500 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold flex-shrink-0">1</span>
                 <p class="text-gray-700">가족 요양보호사 자격 여부 확인</p>
               </div>
               <div class="flex items-center gap-3">
-                <span class="bg-teal-600 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold flex-shrink-0">2</span>
+                <span class="bg-pink-500 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold flex-shrink-0">2</span>
                 <p class="text-gray-700">등급확인 또는 신청 대행</p>
               </div>
               <div class="flex items-center gap-3">
-                <span class="bg-teal-600 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold flex-shrink-0">3</span>
+                <span class="bg-pink-500 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold flex-shrink-0">3</span>
                 <p class="text-gray-700">가족요양 급여 신청</p>
               </div>
               <div class="flex items-center gap-3">
-                <span class="bg-teal-600 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold flex-shrink-0">4</span>
+                <span class="bg-pink-500 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold flex-shrink-0">4</span>
                 <p class="text-gray-700">월 돌봄 기록 → 급여 지급</p>
               </div>
             </div>
           </div>
 
           <div class="text-center">
-            <a href="/#final-cta" class="inline-block bg-teal-600 hover:bg-teal-700 text-white font-bold text-lg px-8 py-4 rounded-full shadow-lg transition-all transform hover:scale-105">
+            <a href="/#final-cta" class="inline-block bg-pink-500 hover:bg-pink-600 text-white font-bold text-lg px-8 py-4 rounded-full shadow-lg transition-all transform hover:scale-105">
               <i class="fas fa-phone-alt mr-2"></i>
               가족요양 지원 상담하기
             </a>
@@ -774,9 +775,9 @@ app.get('/bath-service', (c) => {
           <div class="flex items-center justify-between h-20">
             <a href="/" class="flex items-center space-x-2">
               <img src="/static/logo.png" alt="A방문3천사 로고" class="h-12 w-auto" />
-              <span class="text-2xl font-bold text-blue-600">A방문3천사</span>
+              <span class="text-2xl font-bold text-pink-600">A방문3천사</span>
             </a>
-            <a href="/" class="text-gray-700 hover:text-blue-600 font-medium">
+            <a href="/" class="text-gray-700 hover:text-pink-600 font-medium">
               <i class="fas fa-home mr-2"></i>
               홈으로
             </a>
@@ -784,10 +785,10 @@ app.get('/bath-service', (c) => {
         </div>
       </nav>
 
-      <section class="py-16 px-4 bg-gradient-to-br from-cyan-50 to-white">
+      <section class="py-16 px-4 bg-gradient-to-br from-pink-50 to-white">
         <div class="max-w-4xl mx-auto">
           <div class="text-center mb-12">
-            <i class="fas fa-shower text-6xl text-cyan-600 mb-4"></i>
+            <i class="fas fa-shower text-6xl text-pink-400 mb-4"></i>
             <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-6">방문목욕</h1>
             <p class="text-xl text-gray-600 leading-relaxed">
               "어르신이 편안하고 안전하게 목욕하실 수 있도록,<br />
@@ -803,36 +804,36 @@ app.get('/bath-service', (c) => {
 
             <h3 class="text-xl font-bold text-gray-800 mb-4">제공 방식</h3>
             <div class="grid md:grid-cols-2 gap-4 mb-8">
-              <div class="bg-cyan-50 rounded-lg p-4">
-                <h4 class="font-bold text-cyan-800 mb-2"><i class="fas fa-bath mr-2"></i>체위 안정 목욕</h4>
+              <div class="bg-pink-50 rounded-lg p-4">
+                <h4 class="font-bold text-pink-800 mb-2"><i class="fas fa-bath mr-2"></i>체위 안정 목욕</h4>
                 <p class="text-gray-700 text-sm">실내 환경에 맞춘 체위 안정 목욕 진행</p>
               </div>
-              <div class="bg-blue-50 rounded-lg p-4">
-                <h4 class="font-bold text-blue-800 mb-2"><i class="fas fa-hand-holding-heart mr-2"></i>피부 민감 고려</h4>
+              <div class="bg-pink-100 rounded-lg p-4">
+                <h4 class="font-bold text-pink-900 mb-2"><i class="fas fa-hand-holding-heart mr-2"></i>피부 민감 고려</h4>
                 <p class="text-gray-700 text-sm">욕창·피부 민감 상태 고려</p>
               </div>
-              <div class="bg-teal-50 rounded-lg p-4">
-                <h4 class="font-bold text-teal-800 mb-2"><i class="fas fa-walking mr-2"></i>이동 보조</h4>
+              <div class="bg-pink-200 rounded-lg p-4">
+                <h4 class="font-bold text-pink-900 mb-2"><i class="fas fa-walking mr-2"></i>이동 보조</h4>
                 <p class="text-gray-700 text-sm">안전한 이동 보조 및 낙상 예방</p>
               </div>
-              <div class="bg-green-50 rounded-lg p-4">
-                <h4 class="font-bold text-green-800 mb-2"><i class="fas fa-thermometer-half mr-2"></i>체온 관리</h4>
+              <div class="bg-purple-100 rounded-lg p-4">
+                <h4 class="font-bold text-purple-800 mb-2"><i class="fas fa-thermometer-half mr-2"></i>체온 관리</h4>
                 <p class="text-gray-700 text-sm">목욕 전후 체온 관리</p>
               </div>
             </div>
 
-            <div class="bg-gradient-to-r from-cyan-50 to-blue-50 rounded-lg p-6">
+            <div class="bg-gradient-to-r from-pink-50 to-pink-100 rounded-lg p-6">
               <h3 class="text-xl font-bold text-gray-800 mb-4">왜 중요한가</h3>
               <ul class="space-y-2 text-gray-700">
                 <li><i class="fas fa-exclamation-triangle text-yellow-600 mr-2"></i>가정에서 혼자 목욕 시 낙상·사고 위험 높음</li>
-                <li><i class="fas fa-check-circle text-cyan-600 mr-2"></i>전문 진행 시 심리적 안정 + 위생관리 + 활력 개선</li>
-                <li><i class="fas fa-check-circle text-cyan-600 mr-2"></i>2인 1조 전문팀의 체계적이고 안전한 돌봄</li>
+                <li><i class="fas fa-check-circle text-pink-600 mr-2"></i>전문 진행 시 심리적 안정 + 위생관리 + 활력 개선</li>
+                <li><i class="fas fa-check-circle text-pink-600 mr-2"></i>2인 1조 전문팀의 체계적이고 안전한 돌봄</li>
               </ul>
             </div>
           </div>
 
           <div class="text-center">
-            <a href="/#final-cta" class="inline-block bg-cyan-600 hover:bg-cyan-700 text-white font-bold text-lg px-8 py-4 rounded-full shadow-lg transition-all transform hover:scale-105">
+            <a href="/#final-cta" class="inline-block bg-pink-400 hover:bg-pink-500 text-white font-bold text-lg px-8 py-4 rounded-full shadow-lg transition-all transform hover:scale-105">
               <i class="fas fa-phone-alt mr-2"></i>
               방문목욕 서비스 상담하기
             </a>
@@ -860,9 +861,9 @@ app.get('/welfare-equipment', (c) => {
           <div class="flex items-center justify-between h-20">
             <a href="/" class="flex items-center space-x-2">
               <img src="/static/logo.png" alt="A방문3천사 로고" class="h-12 w-auto" />
-              <span class="text-2xl font-bold text-blue-600">A방문3천사</span>
+              <span class="text-2xl font-bold text-pink-600">A방문3천사</span>
             </a>
-            <a href="/" class="text-gray-700 hover:text-blue-600 font-medium">
+            <a href="/" class="text-gray-700 hover:text-pink-600 font-medium">
               <i class="fas fa-home mr-2"></i>
               홈으로
             </a>
@@ -960,9 +961,9 @@ app.get('/grade-application', (c) => {
           <div class="flex items-center justify-between h-20">
             <a href="/" class="flex items-center space-x-2">
               <img src="/static/logo.png" alt="A방문3천사 로고" class="h-12 w-auto" />
-              <span class="text-2xl font-bold text-blue-600">A방문3천사</span>
+              <span class="text-2xl font-bold text-pink-600">A방문3천사</span>
             </a>
-            <a href="/" class="text-gray-700 hover:text-blue-600 font-medium">
+            <a href="/" class="text-gray-700 hover:text-pink-600 font-medium">
               <i class="fas fa-home mr-2"></i>
               홈으로
             </a>
@@ -970,10 +971,10 @@ app.get('/grade-application', (c) => {
         </div>
       </nav>
 
-      <section class="py-16 px-4 bg-gradient-to-br from-green-50 to-white">
+      <section class="py-16 px-4 bg-gradient-to-br from-pink-50 to-white">
         <div class="max-w-4xl mx-auto">
           <div class="text-center mb-12">
-            <i class="fas fa-clipboard-check text-6xl text-green-600 mb-4"></i>
+            <i class="fas fa-clipboard-check text-6xl text-pink-700 mb-4"></i>
             <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-6">장기요양 등급신청</h1>
             <p class="text-xl text-gray-600 leading-relaxed">
               "등급신청부터 승인까지<br />
@@ -1002,57 +1003,57 @@ app.get('/grade-application', (c) => {
 
             <h3 class="text-xl font-bold text-gray-800 mb-4">우리가 대신하는 것</h3>
             <div class="grid md:grid-cols-2 gap-4 mb-8">
-              <div class="bg-green-50 rounded-lg p-4">
-                <h4 class="font-bold text-green-800 mb-2"><i class="fas fa-file-signature mr-2"></i>신청서류 작성</h4>
+              <div class="bg-pink-50 rounded-lg p-4">
+                <h4 class="font-bold text-pink-800 mb-2"><i class="fas fa-file-signature mr-2"></i>신청서류 작성</h4>
                 <p class="text-gray-700 text-sm">복잡한 신청서류를 정확하게 작성해 드립니다</p>
               </div>
-              <div class="bg-blue-50 rounded-lg p-4">
-                <h4 class="font-bold text-blue-800 mb-2"><i class="fas fa-notes-medical mr-2"></i>의사소견서 발급 안내</h4>
+              <div class="bg-pink-100 rounded-lg p-4">
+                <h4 class="font-bold text-pink-900 mb-2"><i class="fas fa-notes-medical mr-2"></i>의사소견서 발급 안내</h4>
                 <p class="text-gray-700 text-sm">의사소견서 발급 병원 안내 및 작성 가이드</p>
               </div>
-              <div class="bg-teal-50 rounded-lg p-4">
-                <h4 class="font-bold text-teal-800 mb-2"><i class="fas fa-user-check mr-2"></i>방문조사 대응 지도</h4>
+              <div class="bg-pink-200 rounded-lg p-4">
+                <h4 class="font-bold text-pink-900 mb-2"><i class="fas fa-user-check mr-2"></i>방문조사 대응 지도</h4>
                 <p class="text-gray-700 text-sm">방문조사 시 유리한 점수를 받을 수 있도록 포인트 지도</p>
               </div>
-              <div class="bg-purple-50 rounded-lg p-4">
+              <div class="bg-purple-100 rounded-lg p-4">
                 <h4 class="font-bold text-purple-800 mb-2"><i class="fas fa-chart-line mr-2"></i>결과 모니터링</h4>
                 <p class="text-gray-700 text-sm">결과 확인 및 이의신청 필요 시 대응</p>
               </div>
             </div>
 
-            <div class="bg-gradient-to-r from-green-50 to-teal-50 rounded-lg p-6 mb-8">
+            <div class="bg-gradient-to-r from-pink-50 to-pink-100 rounded-lg p-6 mb-8">
               <h3 class="text-xl font-bold text-gray-800 mb-4">등급신청 절차</h3>
               <div class="space-y-3">
                 <div class="flex items-start gap-3">
-                  <span class="bg-green-600 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold flex-shrink-0">1</span>
+                  <span class="bg-pink-600 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold flex-shrink-0">1</span>
                   <div>
                     <p class="font-bold text-gray-800">무료 상담 신청</p>
                     <p class="text-gray-600 text-sm">전화 또는 온라인으로 상담 신청</p>
                   </div>
                 </div>
                 <div class="flex items-start gap-3">
-                  <span class="bg-green-600 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold flex-shrink-0">2</span>
+                  <span class="bg-pink-600 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold flex-shrink-0">2</span>
                   <div>
                     <p class="font-bold text-gray-800">서류 준비 및 신청</p>
                     <p class="text-gray-600 text-sm">필요 서류 준비 및 공단 신청 대행</p>
                   </div>
                 </div>
                 <div class="flex items-start gap-3">
-                  <span class="bg-green-600 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold flex-shrink-0">3</span>
+                  <span class="bg-pink-600 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold flex-shrink-0">3</span>
                   <div>
                     <p class="font-bold text-gray-800">방문조사 준비</p>
                     <p class="text-gray-600 text-sm">방문조사 전 사전 교육 및 대응 포인트 안내</p>
                   </div>
                 </div>
                 <div class="flex items-start gap-3">
-                  <span class="bg-green-600 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold flex-shrink-0">4</span>
+                  <span class="bg-pink-600 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold flex-shrink-0">4</span>
                   <div>
                     <p class="font-bold text-gray-800">등급 판정</p>
                     <p class="text-gray-600 text-sm">결과 확인 및 필요 시 이의신청 지원</p>
                   </div>
                 </div>
                 <div class="flex items-start gap-3">
-                  <span class="bg-green-600 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold flex-shrink-0">5</span>
+                  <span class="bg-pink-600 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold flex-shrink-0">5</span>
                   <div>
                     <p class="font-bold text-gray-800">서비스 연계</p>
                     <p class="text-gray-600 text-sm">등급에 맞는 최적의 서비스 연계 및 시작</p>
@@ -1061,20 +1062,20 @@ app.get('/grade-application', (c) => {
               </div>
             </div>
 
-            <div class="bg-blue-600 text-white rounded-lg p-6 text-center">
+            <div class="bg-pink-600 text-white rounded-lg p-6 text-center">
               <p class="text-2xl font-bold mb-2">완전 무료</p>
               <p class="text-lg">등급신청 및 상담 비용 0원</p>
             </div>
           </div>
 
           <div class="text-center">
-            <a href="/#final-cta" class="inline-block bg-green-600 hover:bg-green-700 text-white font-bold text-lg px-8 py-4 rounded-full shadow-lg transition-all transform hover:scale-105">
+            <a href="/#final-cta" class="inline-block bg-pink-700 hover:bg-pink-800 text-white font-bold text-lg px-8 py-4 rounded-full shadow-lg transition-all transform hover:scale-105">
               <i class="fas fa-phone-alt mr-2"></i>
               등급신청 무료 대행 받기
             </a>
           </div>
 
-          <div class="mt-12 bg-gradient-to-r from-blue-50 to-teal-50 rounded-2xl p-8 text-center">
+          <div class="mt-12 bg-gradient-to-r from-pink-50 to-pink-100 rounded-2xl p-8 text-center">
             <p class="text-2xl font-bold text-gray-800 mb-4">
               "똑같은 상황이어도, 어떻게 준비하느냐에 따라<br />
               결과가 달라집니다."

@@ -1,21 +1,8 @@
 /* Font styles for A방문3천사 */
 
-/* Body text - Noto Sans KR */
-body {
-  font-family: 'Noto Sans KR', sans-serif;
-  font-weight: 400;
-}
-
-/* Headings - Pretendard Bold/ExtraBold */
-h1, h2, h3, h4, h5, h6,
-.font-heading {
-  font-family: 'Pretendard', 'Noto Sans KR', sans-serif;
-  font-weight: 700;
-}
-
-/* Extra bold for main headings */
-h1 {
-  font-weight: 800;
+/* 여기어때 잘난체 적용 */
+body, h1, h2, h3, h4, h5, h6, p, span, a, button, input, textarea, select {
+  font-family: 'YeogiOttaeJalnan', sans-serif !important;
 }
 
 /* Animation styles for A방문3천사 */
