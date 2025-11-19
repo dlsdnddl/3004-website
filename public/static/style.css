@@ -1,8 +1,13 @@
 /* Font styles for A방문3천사 */
 
-/* 여기어때 잘난체 적용 */
-body, h1, h2, h3, h4, h5, h6, p, span, a, button, input, textarea, select {
-  font-family: 'YeogiOttaeJalnan', sans-serif !important;
+/* 여기어때 잘난체 기본 적용 (제목용) */
+body, h1, h2, h3, h4, h5, h6 {
+  font-family: 'YeogiOttaeJalnan', sans-serif;
+}
+
+/* NanumSquareRound 폰트 적용 (본문용) */
+.font-nanum {
+  font-family: 'NanumSquareRound', sans-serif !important;
 }
 
 /* Animation styles for A방문3천사 */
