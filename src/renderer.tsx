@@ -18,6 +18,32 @@ export const renderer = jsxRenderer(({ children, title }) => {
             font-weight: normal;
             font-display: swap;
           }
+          
+          /* NanumSquareRound 폰트 */
+          @font-face {
+            font-family: 'NanumSquareRound';
+            src: url('/fonts/NanumSquareRoundL.ttf') format('truetype');
+            font-weight: 300;
+            font-display: swap;
+          }
+          @font-face {
+            font-family: 'NanumSquareRound';
+            src: url('/fonts/NanumSquareRoundR.ttf') format('truetype');
+            font-weight: 400;
+            font-display: swap;
+          }
+          @font-face {
+            font-family: 'NanumSquareRound';
+            src: url('/fonts/NanumSquareRoundB.ttf') format('truetype');
+            font-weight: 700;
+            font-display: swap;
+          }
+          @font-face {
+            font-family: 'NanumSquareRound';
+            src: url('/fonts/NanumSquareRoundEB.ttf') format('truetype');
+            font-weight: 800;
+            font-display: swap;
+          }
         ` }} />
         
         <script src="https://cdn.tailwindcss.com"></script>
@@ -27,7 +53,8 @@ export const renderer = jsxRenderer(({ children, title }) => {
               extend: {
                 fontFamily: {
                   sans: ['YeogiOttaeJalnan', 'sans-serif'],
-                  heading: ['YeogiOttaeJalnan', 'sans-serif']
+                  heading: ['YeogiOttaeJalnan', 'sans-serif'],
+                  nanum: ['NanumSquareRound', 'sans-serif']
                 },
                 colors: {
                   'pink': {

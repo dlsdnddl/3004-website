@@ -82,7 +82,7 @@ app.get('/', (c) => {
             부모님 요양, 상담부터<br class="md:hidden" /> 등급신청까지<br /><br class="md:hidden" />
             이제 <span class="text-yellow-200">15년 경력<br class="md:hidden" /> 전문가</span>에게 맡기세요
           </h1>
-          <h3 class="text-lg md:text-2xl mb-8 leading-relaxed md:leading-relaxed drop-shadow-md">
+          <h3 class="text-lg md:text-2xl mb-8 leading-relaxed md:leading-relaxed drop-shadow-md font-nanum">
             <span class="md:hidden">등급신청부터 방문요양·목욕·복지용구까지,<br />A방문3천사가 처음부터 끝까지<br /><span class="font-bold text-yellow-200">무료로</span> 도와드립니다.</span>
             <span class="hidden md:inline">장기요양 등급신청부터 방문요양·목욕·복지용구까지,<br />A방문3천사가 처음부터 끝까지 <span class="font-bold text-yellow-200">무료로</span> 도와드립니다.</span>
           </h3>
@@ -125,7 +125,7 @@ app.get('/', (c) => {
                   <div class="flex-shrink-0 w-8 h-8 bg-pink-100 rounded-full flex items-center justify-center mt-1">
                     <i class="fas fa-user-tie text-pink-600 text-sm"></i>
                   </div>
-                  <p class="text-base md:text-lg text-gray-700 leading-relaxed">
+                  <p class="text-base md:text-lg text-gray-700 leading-relaxed font-nanum">
                     단순히 요양보호사를 연결하는 센터가 <span class="font-bold">아닙니다</span>
                   </p>
                 </div>
@@ -134,7 +134,7 @@ app.get('/', (c) => {
                   <div class="flex-shrink-0 w-8 h-8 bg-pink-200 rounded-full flex items-center justify-center mt-1">
                     <i class="fas fa-lightbulb text-pink-700 text-sm"></i>
                   </div>
-                  <p class="text-base md:text-lg text-gray-700 leading-relaxed">
+                  <p class="text-base md:text-lg text-gray-700 leading-relaxed font-nanum">
                     어디서부터 시작해야 할지 막막할 때, 복잡한 서류와 절차에 지칠 때
                   </p>
                 </div>
@@ -143,7 +143,7 @@ app.get('/', (c) => {
                   <div class="flex-shrink-0 w-8 h-8 bg-pink-300 rounded-full flex items-center justify-center mt-1">
                     <i class="fas fa-check-circle text-pink-800 text-sm"></i>
                   </div>
-                  <p class="text-base md:text-lg text-gray-700 leading-relaxed">
+                  <p class="text-base md:text-lg text-gray-700 leading-relaxed font-nanum">
                     <span class="font-bold text-pink-600">15년 경력 장기요양전문가이자 사회복지사</span>가 직접 상황을 분석하고 가장 유리한 해결책을 제시합니다
                   </p>
                 </div>
@@ -151,7 +151,7 @@ app.get('/', (c) => {
               
               {/* Highlight Box */}
               <div class="bg-gradient-to-r from-pink-50 to-pink-100 rounded-xl p-6 border-l-4 border-pink-500">
-                <p class="text-base md:text-lg font-medium text-gray-800 leading-relaxed">
+                <p class="text-base md:text-lg font-medium text-gray-800 leading-relaxed font-nanum">
                   <i class="fas fa-quote-left text-pink-400 mr-2"></i>
                   보호자님의 상황에 맞는 <span class="text-pink-600 font-bold">최적의 케어 플랜</span>을 함께 만들어갑니다
                   <i class="fas fa-quote-right text-pink-400 ml-2"></i>
@@ -175,7 +175,7 @@ app.get('/', (c) => {
                 <i class="fas fa-file-alt text-3xl text-pink-600"></i>
               </div>
               <h4 class="text-lg md:text-xl font-bold text-center mb-4 text-gray-800 leading-snug">복잡한 등급신청<br />'완전 무료 대행'</h4>
-              <p class="text-sm md:text-base text-gray-600 text-center">
+              <p class="text-sm md:text-base text-gray-600 text-center font-nanum">
                 서류 준비부터 방문조사 대응까지, 혜택을 놓치지 않도록 전문가가 전 과정을 무료로 대행합니다.
               </p>
             </div>
@@ -185,7 +185,7 @@ app.get('/', (c) => {
                 <i class="fas fa-link text-3xl text-pink-700"></i>
               </div>
               <h4 class="text-lg md:text-xl font-bold text-center mb-4 text-gray-800 leading-snug">모든 서비스<br />'원스톱 통합 연계 관리'</h4>
-              <p class="text-sm md:text-base text-gray-600 text-center">
+              <p class="text-sm md:text-base text-gray-600 text-center font-nanum">
                 방문요양, 목욕, 간호, 복지용구까지. 여기저기 알아볼 필요 없이 A방문3천사 한곳에서 통합 운영 및 연계 관리를 받으세요.
               </p>
             </div>
@@ -195,7 +195,7 @@ app.get('/', (c) => {
                 <i class="fas fa-heart text-3xl text-pink-800"></i>
               </div>
               <h4 class="text-lg md:text-xl font-bold text-center mb-4 text-gray-800 leading-snug">상황 변화에도<br />'지속 케어 연계'</h4>
-              <p class="text-sm md:text-base text-gray-600 text-center">
+              <p class="text-sm md:text-base text-gray-600 text-center font-nanum">
                 필요시 주간보호센터, 요양원, 병원 왕진까지 자연스러운 연속 돌봄을 제공하여 보호자 부담을 덜어드립니다.
               </p>
             </div>
@@ -265,7 +265,7 @@ app.get('/', (c) => {
                 <span class="text-white font-bold text-3xl">A</span>
               </div>
               <h4 class="text-xl font-bold mb-2 text-gray-800">국민건강보험공단<br />A등급 평가기관</h4>
-              <p class="text-gray-600">공단이 인정한 최우수 A등급 기관입니다.</p>
+              <p class="text-gray-600 font-nanum">공단이 인정한 최우수 A등급 기관입니다.</p>
             </div>
             
             <div class="card-animate bg-gradient-to-br from-pink-100 to-pink-200 rounded-xl p-8 text-center shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
@@ -273,7 +273,7 @@ app.get('/', (c) => {
                 <i class="fas fa-check-circle text-white text-3xl"></i>
               </div>
               <h4 class="text-xl font-bold mb-2 text-gray-800">청구그린기관<br />(상위 1%, 2024년)</h4>
-              <p class="text-gray-600">급여 청구 오류가 없는 상위 1%의 투명한 기관입니다.</p>
+              <p class="text-gray-600 font-nanum">급여 청구 오류가 없는 상위 1%의 투명한 기관입니다.</p>
             </div>
             
             <div class="card-animate bg-gradient-to-br from-purple-100 to-pink-100 rounded-xl p-8 text-center shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
@@ -281,7 +281,7 @@ app.get('/', (c) => {
                 <i class="fas fa-award text-white text-3xl"></i>
               </div>
               <h4 class="text-xl font-bold mb-2 text-gray-800">멘토기관 지정</h4>
-              <p class="text-gray-600">후배 기관을 지도 및 관리하는 실력 있는 기관입니다.</p>
+              <p class="text-gray-600 font-nanum">후배 기관을 지도 및 관리하는 실력 있는 기관입니다.</p>
             </div>
           </div>
         </div>
@@ -300,7 +300,7 @@ app.get('/', (c) => {
                 <span>등급신청은 꼭 센터를 통해야 하나요?</span>
                 <i class="fas fa-chevron-down"></i>
               </summary>
-              <div class="p-6 pt-0 text-gray-700 leading-relaxed">
+              <div class="p-6 pt-0 text-gray-700 leading-relaxed font-nanum">
                 직접도 가능하지만 절차가 복잡하고 서류가 까다롭습니다. 저희는 15년 경력 사회복지사가 전 과정을 무료로 대행해 드립니다. 서류 준비부터 방문조사 대응까지 전문가가 함께하여 혜택을 놓치지 않도록 돕습니다.
               </div>
             </details>
@@ -310,7 +310,7 @@ app.get('/', (c) => {
                 <span>비용이 많이 드나요?</span>
                 <i class="fas fa-chevron-down"></i>
               </summary>
-              <div class="p-6 pt-0 text-gray-700 leading-relaxed">
+              <div class="p-6 pt-0 text-gray-700 leading-relaxed font-nanum">
                 아닙니다. 장기요양보험 적용으로 본인 부담금이 0~15% 수준으로 최소화됩니다. 등급 신청 및 상담은 완전 무료입니다. 국가에서 대부분의 비용을 지원하므로 경제적 부담 없이 이용하실 수 있습니다.
               </div>
             </details>
@@ -320,7 +320,7 @@ app.get('/', (c) => {
                 <span>다른 센터와 뭐가 다른가요?</span>
                 <i class="fas fa-chevron-down"></i>
               </summary>
-              <div class="p-6 pt-0 text-gray-700 leading-relaxed">
+              <div class="p-6 pt-0 text-gray-700 leading-relaxed font-nanum">
                 A방문3천사는 15년 경력 사회복지사가 직접 상담하며, 방문요양·가족요양·방문목욕·복지용구를 통합 운영합니다. 또한 국민건강보험공단 A등급, 청구그린기관, 멘토기관 인증을 받아 신뢰성이 검증되었습니다.
               </div>
             </details>
@@ -330,7 +330,7 @@ app.get('/', (c) => {
                 <span>요양원이 필요해지면 어떻게 되나요?</span>
                 <i class="fas fa-chevron-down"></i>
               </summary>
-              <div class="p-6 pt-0 text-gray-700 leading-relaxed">
+              <div class="p-6 pt-0 text-gray-700 leading-relaxed font-nanum">
                 A방문3천사는 상황 변화 시 주간보호센터, 요양원, 병원 왕진까지 자연스러운 '연속 돌봄'을 연계해 드립니다. 어르신의 상태와 가족의 상황에 맞춰 최적의 해결책을 함께 찾아드립니다.
               </div>
             </details>
