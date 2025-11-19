@@ -5,9 +5,10 @@ body, h1, h2, h3, h4, h5, h6 {
   font-family: 'YeogiOttaeJalnan', sans-serif;
 }
 
-/* NanumSquareRound 폰트 적용 (본문용) */
+/* NanumSquareRound 폰트 적용 (본문용, Bold) */
 .font-nanum {
   font-family: 'NanumSquareRound', sans-serif !important;
+  font-weight: 700 !important;
 }
 
 /* Animation styles for A방문3천사 */

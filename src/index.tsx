@@ -107,13 +107,13 @@ app.get('/', (c) => {
             <div class="md:w-2/3">
               <h2 class="text-2xl md:text-4xl font-bold mb-8 leading-normal md:leading-relaxed text-center md:text-left">
                 <span class="md:hidden">
-                  <span class="text-gray-700">10년 이상의 경력을 가진</span><br />
+                  <span class="text-gray-700">10년 이상 경력의</span><br />
                   <span class="text-pink-600">장기요양 행정전문가</span><span class="text-gray-700">,</span><br />
                   <span class="text-gray-700">15년 경력</span> <span class="text-pink-600">사회복지사</span><span class="text-gray-700">가</span><br />
                   <span class="text-gray-700">직접 운영하는</span> <span class="text-pink-600 text-3xl">A방문3천사</span><span class="text-gray-700">입니다</span>
                 </span>
                 <span class="hidden md:inline">
-                  <span class="text-gray-700" style="white-space: nowrap;">10년 이상의 경력을 가진 <span class="text-pink-600">장기요양 행정전문가</span>,</span><br />
+                  <span class="text-gray-700">10년 이상 경력의 <span class="text-pink-600">장기요양 행정전문가</span>,</span><br />
                   <span class="text-gray-700">15년 경력</span> <span class="text-pink-600">사회복지사</span><span class="text-gray-700">가 직접 운영하는</span><br />
                   <span class="text-pink-600 text-3xl md:text-5xl">A방문3천사</span><span class="text-gray-700">입니다</span>
                 </span>
@@ -405,7 +405,7 @@ app.get('/', (c) => {
             <div class="text-center md:text-right">
               <p class="text-gray-300 mb-2">
                 <i class="fas fa-phone mr-2"></i>
-                문의전화: 000-0000-0000
+                문의전화: 031-759-3004
               </p>
               <p class="text-gray-300">
                 <i class="fas fa-clock mr-2"></i>
