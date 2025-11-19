@@ -112,7 +112,7 @@ app.get('/', (c) => {
                   <span class="text-gray-700">직접 운영하는</span> <span class="text-pink-600 text-3xl">A방문3천사</span><span class="text-gray-700">입니다</span>
                 </span>
                 <span class="hidden md:inline">
-                  <span class="text-gray-700">10년 이상의 경력을 가진 <span class="text-pink-600">장기요양 행정전문가</span>,</span><br />
+                  <span class="text-gray-700" style="white-space: nowrap;">10년 이상의 경력을 가진 <span class="text-pink-600">장기요양 행정전문가</span>,</span><br />
                   <span class="text-gray-700">15년 경력</span> <span class="text-pink-600">사회복지사</span><span class="text-gray-700">가 직접 운영하는</span><br />
                   <span class="text-pink-600 text-3xl md:text-5xl">A방문3천사</span><span class="text-gray-700">입니다</span>
                 </span>
