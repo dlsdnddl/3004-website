@@ -79,13 +79,15 @@ app.get('/', (c) => {
       <section class="relative bg-gradient-to-br from-pink-500 via-pink-400 to-pink-300 text-white py-20 px-4 animate-fade-in">
         <div class="max-w-6xl mx-auto text-center">
           <h1 class="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 drop-shadow-lg" style="line-height: 1.4;">
-            부모님 요양, 상담부터<br class="md:hidden" /> 등급신청까지<br /><br class="md:hidden" />
-            이제 <span class="text-yellow-200">15년 경력<br class="md:hidden" /> 전문가</span>에게 맡기세요
+            <span class="md:hidden">성남 분당 방문요양<br />부모님 요양, 상담부터<br class="md:hidden" /> 등급신청까지<br /><br class="md:hidden" />
+            이제 <span class="text-yellow-200">15년 경력<br class="md:hidden" /> 전문가</span>에게 맡기세요</span>
+            <span class="hidden md:inline">성남방문요양 분당방문요양 | 부모님 요양, 상담부터 등급신청까지<br />
+            이제 <span class="text-yellow-200">15년 경력 전문가</span>에게 맡기세요</span>
           </h1>
-          <h3 class="text-lg md:text-2xl mb-8 leading-relaxed md:leading-relaxed drop-shadow-md font-nanum">
+          <h2 class="text-lg md:text-2xl mb-8 leading-relaxed md:leading-relaxed drop-shadow-md font-nanum">
             <span class="md:hidden">등급신청부터 방문요양·목욕·복지용구까지,<br />A방문3천사가 처음부터 끝까지<br /><span class="font-bold text-yellow-200">무료로</span> 도와드립니다.</span>
-            <span class="hidden md:inline">장기요양 등급신청부터 방문요양·목욕·복지용구까지,<br />A방문3천사가 처음부터 끝까지 <span class="font-bold text-yellow-200">무료로</span> 도와드립니다.</span>
-          </h3>
+            <span class="hidden md:inline">성남시·분당구 장기요양 등급신청부터 방문요양·목욕·복지용구까지,<br />A방문3천사가 처음부터 끝까지 <span class="font-bold text-yellow-200">무료로</span> 도와드립니다.</span>
+          </h2>
           <a href="#final-cta" class="inline-block bg-white hover:bg-pink-50 text-pink-600 font-bold text-base md:text-lg px-6 md:px-8 py-3 md:py-4 rounded-full shadow-lg transition-all transform hover:scale-105">
             <i class="fas fa-phone-alt mr-2"></i>
             지금 바로 무료 상담 신청하기

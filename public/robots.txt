@@ -1,0 +1,30 @@
+# A방문3천사 robots.txt
+# 성남방문요양, 분당방문요양 전문 장기요양 서비스
+
+User-agent: *
+Allow: /
+
+# 주요 페이지
+Allow: /visit-care
+Allow: /family-care
+Allow: /bath-service
+Allow: /welfare-equipment
+Allow: /grade-application
+
+# 크롤링 제외
+Disallow: /api/
+Disallow: /admin/
+
+# 사이트맵 위치
+Sitemap: https://3004.co.kr/sitemap.xml
+
+# 네이버 검색로봇
+User-agent: Yeti
+Allow: /
+
+# 구글 검색로봇
+User-agent: Googlebot
+Allow: /
+
+# 크롤 속도 설정
+Crawl-delay: 1
