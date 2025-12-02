@@ -569,6 +569,91 @@ app.post('/api/consultation', async (c) => {
   }
 })
 
+// SEO: robots.txt
+app.get('/robots.txt', (c) => {
+  const robotsTxt = `# A방문3천사 robots.txt
+# 성남방문요양, 분당방문요양 전문 장기요양 서비스
+
+User-agent: *
+Allow: /
+
+# 주요 페이지
+Allow: /visit-care
+Allow: /family-care
+Allow: /bath-service
+Allow: /welfare-equipment
+Allow: /grade-application
+
+# 크롤링 제외
+Disallow: /api/
+Disallow: /admin/
+
+# 사이트맵 위치
+Sitemap: https://3004.co.kr/sitemap.xml
+
+# 네이버 검색로봇
+User-agent: Yeti
+Allow: /
+
+# 구글 검색로봇
+User-agent: Googlebot
+Allow: /
+
+# 크롤 속도 설정
+Crawl-delay: 1`
+
+  return c.text(robotsTxt, 200, {
+    'Content-Type': 'text/plain; charset=utf-8'
+  })
+})
+
+// SEO: sitemap.xml
+app.get('/sitemap.xml', (c) => {
+  const sitemapXml = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://3004.co.kr/</loc>
+    <lastmod>2025-12-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://3004.co.kr/visit-care</loc>
+    <lastmod>2025-12-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://3004.co.kr/family-care</loc>
+    <lastmod>2025-12-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://3004.co.kr/bath-service</loc>
+    <lastmod>2025-12-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://3004.co.kr/welfare-equipment</loc>
+    <lastmod>2025-12-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://3004.co.kr/grade-application</loc>
+    <lastmod>2025-12-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+</urlset>`
+
+  return c.text(sitemapXml, 200, {
+    'Content-Type': 'application/xml; charset=utf-8'
+  })
+})
+
 // 방문요양 페이지
 app.get('/visit-care', (c) => {
   return c.render(
