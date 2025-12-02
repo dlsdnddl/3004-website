@@ -6,13 +6,13 @@ export const renderer = jsxRenderer(({ children, title }) => {
       <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>{title || '성남방문요양 A방문3천사 | 15년 경력 전문가의 무료 상담'}</title>
+        <title>{title || '성남방문요양 A방문3천사 | 15년 경력 장기요양전문가의 맞춤 무료상담'}</title>
         <meta name="description" content="성남 방문요양 전문 A방문3천사. 15년 경력 사회복지사가 등급신청부터 방문요양·목욕·복지용구까지 무료 상담. 성남시 장기요양 원스톱 케어 서비스. 031-759-3004" />
         <meta name="keywords" content="성남방문요양, A방문3천사, 성남장기요양, 성남요양보호사, 성남방문목욕, 성남복지용구, 장기요양등급신청, 성남재가요양, 분당방문요양, 분당장기요양" />
         
         {/* Open Graph 메타태그 (소셜 미디어 공유) */}
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="성남방문요양 A방문3천사 | 15년 경력 전문가의 무료 상담" />
+        <meta property="og:title" content="성남방문요양 A방문3천사 | 15년 경력 장기요양전문가의 맞춤 무료상담" />
         <meta property="og:description" content="성남 방문요양 전문 A방문3천사. 15년 경력 사회복지사가 등급신청부터 방문요양·목욕·복지용구까지 무료 상담." />
         <meta property="og:url" content="https://3004.co.kr" />
         <meta property="og:site_name" content="A방문3천사" />
@@ -20,7 +20,7 @@ export const renderer = jsxRenderer(({ children, title }) => {
         
         {/* Twitter 카드 */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="성남방문요양 A방문3천사 | 15년 경력 전문가" />
+        <meta name="twitter:title" content="성남방문요양 A방문3천사 | 15년 경력 장기요양전문가" />
         <meta name="twitter:description" content="성남 방문요양 전문. 15년 경력 사회복지사가 무료 상담해드립니다." />
         
         {/* 지역 비즈니스 정보 */}
