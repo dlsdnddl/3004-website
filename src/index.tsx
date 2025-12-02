@@ -528,10 +528,33 @@ app.post('/api/consultation', async (c) => {
       return c.json({ error: '이름과 연락처는 필수입니다.' }, 400)
     }
     
+    // D1 데이터베이스에 저장
     const result = await c.env.DB.prepare(`
       INSERT INTO consultations (name, phone, service_type, message)
       VALUES (?, ?, ?, ?)
     `).bind(name, phone, service_type || '', message || '').run()
+    
+    // Google Sheets에도 전송 (비동기, 실패해도 응답에 영향 없음)
+    const googleSheetsUrl = 'https://script.google.com/macros/s/AKfycbwmTRU3cDkepv2hZzddvLAk--GTbgDQfZSKl-b0ZaffdkkXbhH2x7s655Yx844UPto1/exec'
+    
+    try {
+      await fetch(googleSheetsUrl, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name,
+          phone,
+          service_type: service_type || '일반',
+          message: message || ''
+        })
+      })
+      console.log('Google Sheets 전송 성공')
+    } catch (sheetsError) {
+      // Google Sheets 전송 실패해도 메인 응답은 성공 처리
+      console.error('Google Sheets 전송 실패:', sheetsError)
+    }
     
     return c.json({ 
       success: true, 
