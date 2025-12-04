@@ -574,6 +574,13 @@ app.get('/naver987a93608620188920e4e7ed2a13179d.html', (c) => {
   })
 })
 
+// Google Search Console 인증 파일
+app.get('/google32db8b0d5039453c.html', (c) => {
+  return c.text('google-site-verification: google32db8b0d5039453c.html', 200, {
+    'Content-Type': 'text/html; charset=utf-8'
+  })
+})
+
 // SEO: robots.txt
 app.get('/robots.txt', (c) => {
   const robotsTxt = `# A방문3천사 robots.txt
