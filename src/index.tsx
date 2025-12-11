@@ -379,6 +379,26 @@ app.get('/', (c) => {
                 <textarea name="message" rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-pink-500 text-gray-900" placeholder="궁금하신 사항을 자유롭게 작성해주세요."></textarea>
               </div>
               
+              {/* 개인정보 수집·이용 동의 */}
+              <div class="text-left bg-gray-50 rounded-lg p-4 border border-gray-200">
+                <div class="flex items-start gap-2 mb-3">
+                  <input type="checkbox" id="privacy-agree" name="privacy_agree" required class="mt-1 w-4 h-4 text-pink-600 border-gray-300 rounded focus:ring-pink-500" />
+                  <label for="privacy-agree" class="text-sm text-gray-700 cursor-pointer">
+                    <span class="font-bold text-gray-900">[필수]</span> 개인정보 수집·이용에 동의합니다
+                  </label>
+                </div>
+                <details class="text-xs text-gray-600 bg-white rounded p-3 border border-gray-200">
+                  <summary class="cursor-pointer font-medium text-gray-700 hover:text-pink-600">개인정보 수집·이용 안내 자세히 보기</summary>
+                  <div class="mt-3 space-y-2 leading-relaxed">
+                    <p class="font-bold text-gray-800">A방문3천사는 상담 서비스 제공을 위해 아래와 같은 개인정보를 수집·이용합니다.</p>
+                    <p><span class="font-semibold text-gray-700">• 수집 항목:</span> 이름, 연락처, 관심 서비스, 문의사항</p>
+                    <p><span class="font-semibold text-gray-700">• 수집 목적:</span> 방문요양 상담 및 서비스 안내</p>
+                    <p><span class="font-semibold text-gray-700">• 보관 기간:</span> 상담 완료 후 3개월 이내 파기</p>
+                    <p class="text-gray-600 pt-2 border-t border-gray-200">수집된 정보는 상담 목적 외로 사용되지 않으며, 동의를 거부하실 경우 상담 신청이 제한될 수 있습니다.</p>
+                  </div>
+                </details>
+              </div>
+              
               <button type="submit" class="w-full bg-pink-600 hover:bg-pink-700 text-white font-bold text-lg py-4 rounded-lg shadow-lg transition-all transform hover:scale-105">
                 <i class="fas fa-phone-alt mr-2"></i>
                 15년 경력 전문가에게 무료 상담 신청하기
