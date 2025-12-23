@@ -3,21 +3,26 @@
 ## 프로젝트 개요
 - **이름**: A방문3천사
 - **목표**: 15년 경력 사회복지사가 운영하는 장기요양 전문센터 웹사이트
+- **도메인**: https://3004.co.kr
 - **주요 기능**: 
   - 장기요양 서비스 소개 (방문요양, 가족요양, 방문목욕, 복지용구, 등급신청)
-  - 온라인 상담 신청 시스템
+  - 온라인 상담 신청 시스템 (개인정보 수집 동의 포함)
+  - Google Sheets 자동 기록 + Gmail 실시간 알림
   - 반응형 디자인으로 모바일 최적화
-  - D1 데이터베이스를 활용한 상담 신청 저장
+  - SEO 최적화 (네이버/구글 검색 엔진 등록)
 
 ## 공개 URL
-- **개발 서버**: https://3000-ia2kfc67vao5bjix9jw91-02b9cc79.sandbox.novita.ai
+- **프로덕션**: https://3004.co.kr
+- **Cloudflare Pages**: https://a-visit-three-angels.pages.dev
+- **GitHub**: https://github.com/dlsdnddl/3004-website
+
+## 서비스 페이지
 - **메인 페이지**: `/`
-- **서비스 상세 페이지**:
-  - 방문요양: `/visit-care`
-  - 가족요양: `/family-care`
-  - 방문목욕: `/bath-service`
-  - 복지용구: `/welfare-equipment`
-  - 장기요양 등급신청: `/grade-application`
+- **방문요양**: `/visit-care`
+- **가족요양**: `/family-care`
+- **방문목욕**: `/bath-service`
+- **복지용구**: `/welfare-equipment`
+- **장기요양 등급신청**: `/grade-application`
 
 ## 데이터 구조
 
@@ -27,41 +32,69 @@ CREATE TABLE consultations (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   name TEXT NOT NULL,           -- 신청자 이름
   phone TEXT NOT NULL,          -- 연락처
-  service_type TEXT,            -- 관심 서비스 (등급신청, 방문요양, 가족요양 등)
+  service_type TEXT,            -- 관심 서비스
   message TEXT,                 -- 문의사항
   created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
   status TEXT DEFAULT 'pending' -- 처리 상태
 );
 ```
 
-### 저장 서비스
-- **Cloudflare D1**: SQLite 기반 서버리스 데이터베이스
-- **로컬 개발**: `.wrangler/state/v3/d1` 디렉토리에 로컬 SQLite 생성
-- **프로덕션**: Cloudflare D1 프로덕션 데이터베이스
+### 데이터 저장 및 알림
+1. **Cloudflare D1**: SQLite 기반 서버리스 데이터베이스
+2. **Google Sheets**: 자동 기록 (A방문3천사 상담신청 시트)
+3. **Gmail 알림**: 실시간 이메일 발송 (magudaji@gmail.com)
+
+## 🚀 빠른 시작 (새 샌드박스)
+
+### 1. 저장소 클론
+```bash
+cd /home/user
+git clone https://github.com/dlsdnddl/3004-website.git webapp
+cd webapp
+```
+
+### 2. 의존성 설치
+```bash
+npm install
+```
+
+### 3. 로컬 개발 (선택)
+```bash
+npm run build
+pm2 start ecosystem.config.cjs
+curl http://localhost:3000
+```
+
+### 4. 배포
+```bash
+# GitHub 인증
+setup_github_environment
+
+# Cloudflare 배포 (필요시)
+setup_cloudflare_api_key
+npm run build
+npx wrangler pages deploy dist --project-name a-visit-three-angels
+```
 
 ## 사용자 가이드
 
 ### 홈페이지 구조
 1. **Hero Section**: 메인 헤드라인과 CTA 버튼
-2. **Mini About**: 대표 소개 및 전문성 강조
-3. **Benefits & Services**: 3가지 핵심 혜택과 5가지 서비스 소개
-4. **Social Proof**: A등급, 청구그린기관, 멘토기관 인증 표시
+2. **About Section**: 대표 소개 (10년 행정전문가, 15년 사회복지사)
+3. **Benefits & Services**: 3가지 핵심 혜택과 5가지 서비스
+4. **Social Proof**: A등급, 청구그린기관, 멘토기관 인증
 5. **FAQ**: 자주 묻는 질문 아코디언
-6. **Final CTA**: 상담 신청 폼 (DB 저장)
-
-### 서비스별 상세 페이지
-각 서비스는 독립된 페이지로 구성되어 있으며, 다음 내용을 포함합니다:
-- 서비스 설명
-- 제공 내용 및 방식
-- 이용 절차
-- 실제 혜택
-- 상담 신청 버튼 (메인 페이지 CTA로 이동)
+6. **Final CTA**: 상담 신청 폼 (개인정보 동의 포함)
 
 ### 상담 신청 프로세스
 1. 사용자가 폼 작성 (이름, 연락처, 관심 서비스, 문의사항)
-2. 폼 제출 시 `/api/consultation` API 호출
-3. D1 데이터베이스에 상담 신청 정보 저장
-4. 성공 메시지 표시
+2. 개인정보 수집·이용 동의 체크 (필수)
+3. `/api/consultation` API 호출
+4. **3곳 동시 저장**:
+   - Cloudflare D1 데이터베이스
+   - Google Sheets (A방문3천사 상담신청)
+   - Gmail 알림 (magudaji@gmail.com)
+5. 성공 메시지 표시
 
 ## 개발 가이드
 
@@ -74,7 +107,7 @@ npm install
 # 데이터베이스 마이그레이션 (로컬)
 npm run db:migrate:local
 
-# 테스트 데이터 시드 (선택사항)
+# 테스트 데이터 시드
 npm run db:seed
 
 # 프로젝트 빌드
@@ -84,10 +117,10 @@ npm run build
 pm2 start ecosystem.config.cjs
 
 # 서비스 테스트
-npm run test  # curl http://localhost:3000
+curl http://localhost:3000
 
 # 로그 확인
-pm2 logs webapp --nostream
+pm2 logs --nostream
 ```
 
 ### 데이터베이스 관리
@@ -96,11 +129,8 @@ pm2 logs webapp --nostream
 # 로컬 데이터베이스 초기화
 npm run db:reset
 
-# 로컬 데이터베이스 콘솔
+# 로컬 쿼리 실행
 npm run db:console:local
-
-# 쿼리 실행 예시
-npx wrangler d1 execute webapp-production --local --command="SELECT * FROM consultations"
 
 # 프로덕션 마이그레이션
 npm run db:migrate:prod
@@ -111,37 +141,54 @@ npm run db:migrate:prod
 ```
 webapp/
 ├── src/
-│   ├── index.tsx          # 메인 애플리케이션 (모든 라우트 포함)
-│   └── renderer.tsx       # HTML 렌더러 (공통 레이아웃)
+│   ├── index.tsx          # 메인 애플리케이션 (모든 라우트)
+│   └── renderer.tsx       # HTML 렌더러 (SEO 메타태그)
 ├── public/
-│   └── static/
-│       └── style.css      # 커스텀 CSS
+│   ├── fonts/             # NanumSquareRound 폰트
+│   ├── static/            # 로고, 이미지
+│   ├── naver987a93608620188920e4e7ed2a13179d.html  # 네이버 인증
+│   └── google32db8b0d5039453c.html                 # 구글 인증
 ├── migrations/
 │   └── 0001_initial_schema.sql  # DB 스키마
 ├── dist/                  # 빌드 결과물
-├── .wrangler/            # 로컬 개발 파일
+├── .wrangler/            # 로컬 개발 (자동 생성)
 ├── ecosystem.config.cjs  # PM2 설정
 ├── wrangler.jsonc        # Cloudflare 설정
-├── package.json          # 프로젝트 설정
-└── seed.sql              # 테스트 데이터
+├── vite.config.ts        # Vite 설정
+├── package.json          # 의존성
+├── seed.sql              # 테스트 데이터
+├── NEW_SESSION_CONTEXT.md    # 새 세션 가이드 ⭐
+├── QUICK_START.md            # 빠른 시작 가이드 ⭐
+└── PROJECT_HANDOVER.md       # 상세 문서
 ```
 
 ## 배포
 
-### Cloudflare Pages 배포 (프로덕션)
+### Cloudflare Pages 배포
 
 ```bash
-# 프로젝트 빌드
+# 1. 빌드
 npm run build
 
-# Cloudflare Pages 배포
+# 2. 배포
 npm run deploy:prod
+# 또는
+npx wrangler pages deploy dist --project-name a-visit-three-angels
 
-# 프로덕션 데이터베이스 마이그레이션
+# 3. 프로덕션 DB 마이그레이션 (최초 1회)
 npm run db:migrate:prod
+```
 
-# 환경 변수 설정 (필요시)
-npx wrangler pages secret put API_KEY --project-name webapp
+### Git 워크플로우
+
+```bash
+# 변경사항 확인
+git status
+
+# 커밋 및 푸시
+git add .
+git commit -m "커밋 메시지"
+git push origin main
 ```
 
 ## 기술 스택
@@ -149,48 +196,107 @@ npx wrangler pages secret put API_KEY --project-name webapp
 - **런타임**: Cloudflare Pages/Workers
 - **데이터베이스**: Cloudflare D1 (SQLite)
 - **빌드 도구**: Vite
-- **스타일링**: Tailwind CSS (CDN), Font Awesome (아이콘)
+- **스타일링**: Tailwind CSS (CDN), Font Awesome
 - **프로세스 관리**: PM2 (개발 환경)
 - **배포**: Wrangler CLI
+- **통합**: Google Sheets API, Gmail (Apps Script)
 
 ## 완료된 기능
-✅ **네비게이션 바** (로고, 메뉴, 서비스 드롭다운, 상담신청 버튼)
-✅ Hero Section with CTA
-✅ Mini About with 임직원 사진 (10년 이상 행정전문가, 15년 경력 사회복지사)
-✅ Benefits & Services 섹션 (바로가기 버튼 포함)
-✅ Social Proof (A등급, 청구그린기관, 멘토기관)
-✅ FAQ 아코디언
-✅ Final CTA with 상담 신청 폼
-✅ 5개 서비스 상세 페이지 (방문요양, 가족요양, 방문목욕, 복지용구, 등급신청)
-✅ D1 데이터베이스 연동
-✅ 반응형 디자인 (모바일 최적화, 햄버거 메뉴)
-✅ 스무스 스크롤 및 애니메이션
-✅ Git 버전 관리
-✅ **브랜드 로고** (Three Angel 로고 적용)
-✅ **개선된 Footer** (로고, 연락처, 전문성 강조, 2025 저작권)
 
-## 향후 개선 사항
-- [ ] 상담 신청 관리자 페이지 (대시보드)
-- [ ] 이메일 알림 기능 (상담 신청 시)
-- [ ] 실제 이미지 추가 (전문가 프로필, 서비스 사진)
-- [ ] SEO 최적화 (메타 태그, sitemap)
-- [ ] Google Analytics 연동
-- [ ] 채팅 상담 기능
+### ✅ 웹사이트
+- 네비게이션 바 (로고, 메뉴, 드롭다운, 모바일 햄버거)
+- Hero Section (메인 헤드라인, CTA)
+- About Section (임직원 사진, 전문성 강조)
+- Benefits & Services (핵심 혜택, 5가지 서비스)
+- Social Proof (A등급, 청구그린기관, 멘토기관)
+- FAQ 아코디언
+- Final CTA (상담 신청 폼)
+- 5개 서비스 상세 페이지
+- 반응형 디자인 (모바일 최적화)
+- 스무스 스크롤 및 애니메이션
+- Three Angel 브랜드 로고
+
+### ✅ 데이터 처리
+- D1 데이터베이스 연동
+- Google Sheets 자동 기록
+- Gmail 실시간 알림
+- 개인정보 수집·이용 동의 (법적 준수)
+
+### ✅ SEO 최적화
+- 메타 태그 최적화 (`성남방문요양 A방문3천사 | 15년 경력 장기요양전문가의 맞춤 무료상담`)
+- 구조화된 데이터 (JSON-LD: LocalBusiness, Organization, WebSite)
+- 지역 SEO (성남시, 분당구 GPS 좌표)
+- sitemap.xml, robots.txt
+- 네이버 서치어드바이저 등록 완료
+- 구글 서치 콘솔 등록 완료
+- 네이버 플레이스 홈페이지 연결 완료
+
+### ✅ 배포
+- Cloudflare Pages 프로덕션 운영 중
+- 커스텀 도메인 (3004.co.kr)
+- SSL 자동 발급
+- GitHub 자동 연동
+- Git 버전 관리
+
+## 검색 노출 현황 (2025-01-02)
+
+### 현재 상태
+- ✅ **"성남방문요양 A방문3천사"**: 1페이지 노출
+- ⏳ **"성남방문요양"**: 후순위 (1-2주 후 개선 예상)
+- ⏳ **"A방문3천사"**: 후순위 (브랜드 인지도 향상 필요)
+
+### SEO 개선 계획
+1. **네이버 블로그 포스팅** (최우선)
+   - 주 2-3회, 총 20-30개 목표
+   - 주제: 성남방문요양, 등급신청, 장기요양 정보
+   
+2. **홈페이지 콘텐츠 추가**
+   - 고객 후기 페이지 (`/reviews`)
+   - 블로그/소식 페이지 (`/blog`)
+   - 지역별 서비스 페이지 (`/seongnam`, `/bundang`)
+
+3. **백링크 구축**
+   - 네이버 지식iN 활동
+   - 지역 커뮤니티 홍보
+   - 복지 디렉토리 등록
+
+4. **이미지/속도 최적화**
+   - 이미지 압축 및 최적화
+   - 폰트 로딩 개선
+
+## 🎯 새 세션에서 시작하기
+
+### 최단 경로 (3단계)
+1. **저장소 클론**: `git clone https://github.com/dlsdnddl/3004-website.git webapp`
+2. **AI에게 알리기**: "NEW_SESSION_CONTEXT.md 파일을 읽어주세요"
+3. **인증 설정**: `setup_github_environment`, `setup_cloudflare_api_key`
+
+### 상세 가이드
+- **NEW_SESSION_CONTEXT.md**: 전체 시작 가이드
+- **QUICK_START.md**: 빠른 시작 (3단계)
+- **PROJECT_HANDOVER.md**: 프로젝트 상세 문서
 
 ## 배포 상태
-- **플랫폼**: Cloudflare Pages (준비 완료)
-- **상태**: 로컬 개발 완료, 프로덕션 배포 대기
-- **기술 스택**: Hono + TypeScript + TailwindCSS + Cloudflare D1
-- **최종 업데이트**: 2025년
+- **플랫폼**: Cloudflare Pages
+- **상태**: ✅ 프로덕션 운영 중
+- **도메인**: https://3004.co.kr
+- **마지막 배포**: 2025-01-02
+- **마지막 업데이트**: 개인정보 수집 동의 추가
 
-## 주요 업데이트 (v2.0)
-- ✨ 전체 네비게이션 시스템 추가 (상단 메뉴바)
-- 🎨 Three Angel 브랜드 로고 적용
-- 👥 A방문3천사 임직원 사진 추가
-- 📝 카피 개선 ("10년 이상의 경력을 가진 장기요양 행정전문가")
-- 🔗 서비스 카드에 "바로가기" 클릭 유도 문구 추가
-- 🏢 Footer 개선 (로고, 전문성 강조, 2025 저작권)
-- 📱 모바일 반응형 햄버거 메뉴
+## 최근 업데이트 (v3.0 - 2025-01-02)
+- ✨ 개인정보 수집·이용 동의 체크박스 추가
+- 🔍 SEO 최적화 (네이버/구글 등록)
+- 📧 Gmail 알림 시스템 (magudaji@gmail.com)
+- 🔐 개인정보보호법 준수
+- 📊 Google Sheets 자동 기록
+- 🌐 커스텀 도메인 (3004.co.kr)
+- 📝 NEW_SESSION_CONTEXT.md, QUICK_START.md 문서 추가
 
 ## 문의
-프로젝트 관련 문의사항은 GitHub Issues를 통해 남겨주세요.
+프로젝트 관련 문의: GitHub Issues 또는 magudaji@gmail.com
+
+---
+
+**Last Updated**: 2025-01-02  
+**Status**: ✅ Production Running  
+**Version**: v3.0
